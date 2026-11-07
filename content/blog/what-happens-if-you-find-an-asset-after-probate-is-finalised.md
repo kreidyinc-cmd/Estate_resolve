@@ -10,7 +10,6 @@ seo:
   description: Found a bank account or investment after probate? Learn how a newly
     discovered asset may be collected, taxed and distributed to beneficiaries.
   slug: asset-found-after-probate
-  canonical: asset found after probate
   og_image: ""
 ---
 **What Happens If You Find an Asset After Probate is finalised?**
