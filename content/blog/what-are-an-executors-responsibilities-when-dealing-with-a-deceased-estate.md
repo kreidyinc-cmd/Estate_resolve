@@ -9,7 +9,7 @@ seo:
     assets and debts to probate, paying liabilities and distributing a deceased
     estate.
   slug: executor-responsibilities-deceased-estate
-  title: Executor Responsibilities When Someone Dies | Estate Resolve
+  title: Executor Responsibilities When Someone Dies
   og_image: ""
 ---
 Being named as an executor of a will can feel like an honour, but it also brings important responsibilities. An executor is responsible for administering the deceased person's estate, dealing with their assets and liabilities and ultimately distributing the estate to the people entitled to inherit.

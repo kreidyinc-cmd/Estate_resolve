@@ -6,7 +6,7 @@ excerpt: What happens to a bank account after death? Learn how sole and joint
   accounts are handled, when a bank may require probate and how executors can
   look for unknown or dormant accounts.
 seo:
-  title: ": What Happens to a Bank Account When Someone Dies? | Estate Resolve"
+  title: "What Happens to a Bank Account When Someone Dies?"
   description: Learn what happens to sole and joint bank accounts after death,
     when probate may be needed and how executors can look for forgotten accounts
   slug: bank-account-when-someone-dies

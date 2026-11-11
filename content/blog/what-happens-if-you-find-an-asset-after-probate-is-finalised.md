@@ -6,7 +6,7 @@ excerpt: A forgotten asset can sometimes appear after an estate has been
   distributed. Learn what may happen next, whether the existing Grant can be
   used and why further asset checks may be sensible.
 seo:
-  title: Found an Asset After Probate? What Happens Next | Estate Resolve
+  title: Found an Asset After Probate? What Happens Next
   description: Found a bank account or investment after probate? Learn how a newly
     discovered asset may be collected, taxed and distributed to beneficiaries.
   slug: asset-found-after-probate
