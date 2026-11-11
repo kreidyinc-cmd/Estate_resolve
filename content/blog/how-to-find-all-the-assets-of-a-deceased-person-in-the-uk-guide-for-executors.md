@@ -7,7 +7,7 @@ excerpt: Discover how executors can identify bank accounts, pensions,
   where to start, common mistakes to avoid and when a professional asset search
   may help ensure no important assets are overlooked.
 seo:
-  title: How to Find Assets of a Deceased Person | Estate Resolve
+  title: How to Find Assets of a Deceased Person
   description: Learn how executors can identify bank accounts, investments,
     pensions and other assets after a death. A practical UK guide from Estate
     Resolve
