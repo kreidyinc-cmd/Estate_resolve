@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { JsonLd } from "@/app/components/JsonLd";
 import { getAllBlogPosts, getBlogPostBySlug } from "@/app/lib/blog";
 import { buildMetadata } from "@/app/lib/seo";
+import { blogPostStructuredData } from "@/app/lib/structured-data";
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>;
@@ -53,6 +55,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <main id="main-content" className="flex-1">
+      <JsonLd id="article-structured-data" data={blogPostStructuredData(post)} />
       <section className="bg-brand-navy pt-[120px] text-white">
         <div className="site-container py-16 md:py-20">
           <Link
