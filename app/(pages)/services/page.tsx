@@ -1,6 +1,8 @@
 import { ChevronDownIcon } from "@/app/components/Icons";
+import { JsonLd } from "@/app/components/JsonLd";
 import { PageHero } from "@/app/components/PageHero";
 import { buildMetadata } from "@/app/lib/seo";
+import { servicesStructuredData } from "@/app/lib/structured-data";
 import Link from "next/link";
 
 export const metadata = buildMetadata({
@@ -216,6 +218,7 @@ const secondaryLinkClassName =
 export default function ServicesPage() {
   return (
     <main id="main-content" className="flex-1">
+      <JsonLd id="services-structured-data" data={servicesStructuredData()} />
       <PageHero
         eyebrow="Estate Financial Search Services"
         title="Financial Asset Searches for Deceased Estates"
