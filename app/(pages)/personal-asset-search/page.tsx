@@ -226,15 +226,9 @@ export default function PersonalAssetSearchPage() {
                 <strong className="text-brand-navy">
                   Try a free tracing route.
                 </strong>{" "}
-                <a
-                  href="https://www.mylostaccount.org.uk/start-search"
-                  className={textLinkClassName}
-                >
-                  My Lost Account
-                </a>{" "}
-                is free for tracing lost UK personal bank, building society
-                and NS&amp;I accounts. It is not a search for every active
-                account, pension, investment or overseas asset.
+                My Lost Account is free for tracing lost UK personal bank,
+                building society and NS&amp;I accounts. It is not a search for
+                every active account, pension, investment or overseas asset.
               </li>
             </ol>
             <p>
@@ -294,13 +288,7 @@ export default function PersonalAssetSearchPage() {
                 before you can reclaim money or update the records.
               </p>
               <p className="mt-4 text-sm leading-8 text-brand-slate">
-                The{" "}
-                <a
-                  href="https://www.theia.org/unclaimedassets"
-                  className={textLinkClassName}
-                >
-                  Investment Association&apos;s free Unclaimed Assets Portal
-                </a>{" "}
+                The Investment Association&apos;s free Unclaimed Assets Portal
                 is powered by Gretel. It checks your details against records
                 from participating financial companies seeking customers they
                 have lost contact with. It uses the Gretel platform, rather
@@ -320,10 +308,7 @@ export default function PersonalAssetSearchPage() {
             <div className="mt-6 space-y-4 text-sm leading-8 text-brand-slate">
               <p>
                 Free services can be a practical first step. In addition to
-                My Lost Account and the government pension tool,{" "}
-                <a href="https://www.gretel.co.uk/" className={textLinkClassName}>
-                  Gretel
-                </a>{" "}
+                My Lost Account and the government pension tool, Gretel
                 describes its service as free to join and use. It looks for
                 lost financial assets with participating providers, including
                 bank accounts, pensions, investments and shares.
