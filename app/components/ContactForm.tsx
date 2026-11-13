@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -14,6 +14,7 @@ const inputClassName =
 
 export function ContactForm() {
   const router = useRouter();
+  const websiteRef = useRef<HTMLInputElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
@@ -36,7 +37,8 @@ export function ContactForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(values),
+        // Read this separately: the form resolver strips fields outside its schema.
+        body: JSON.stringify({ ...values, website: websiteRef.current?.value ?? "" }),
       });
 
       const payload = (await response.json()) as {
@@ -44,7 +46,7 @@ export function ContactForm() {
         success: boolean;
       };
 
-      if (!response.ok || !payload.success) {
+      if (!response.ok || payload.success !== true) {
         throw new Error(
           payload.message ||
             "We could not send your message right now. Please try again.",
@@ -65,7 +67,19 @@ export function ContactForm() {
   }
 
   return (
-    <form className="space-y-5" onSubmit={handleSubmit(onSubmit)}>
+    <form className="space-y-5" onSubmit={(event) => void handleSubmit(onSubmit)(event)}>
+      <div hidden aria-hidden="true">
+        <label htmlFor="contact-website">Leave this field empty</label>
+        <input
+          ref={websiteRef}
+          id="contact-website"
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          defaultValue=""
+        />
+      </div>
       <div>
         <label
           className="mb-2 block text-sm font-semibold text-brand-navy"
@@ -120,7 +134,7 @@ export function ContactForm() {
       </div>
 
       {errorMessage ? (
-        <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+        <div role="alert" className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
           {errorMessage}
         </div>
       ) : null}
