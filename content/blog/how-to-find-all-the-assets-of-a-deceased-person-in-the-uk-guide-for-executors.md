@@ -152,7 +152,7 @@ If an asset emerges later, verify ownership and value, update the estate records
 
 Look for foreign statements, overseas tax papers, property documents and payments connected with time spent abroad. Record the country, currency and relevant provider for each lead.
 
-An overseas institution may require local legal documents or a separate process. A UK enquiry or grant should not be assumed to resolve every foreign ownership or release requirement. [MoneyHelper's guidance on getting probate help](https://www.moneyhelper.org.uk/en/family-and-care/death-and-bereavement/what-to-do-when-someone-dies) covers estates with overseas assets or other complications.
+An overseas institution may require local legal documents or a separate process. A UK enquiry or grant should not be assumed to resolve every foreign ownership or release requirement. For an excepted estate in England and Wales, [GOV.UK's guidance on probate valuation](https://www.gov.uk/applying-for-probate/before-you-apply) explains that overseas assets are subtracted from the gross estate value for Inheritance Tax when calculating the gross value for probate.
 
 Seek appropriate legal or tax advice where there are trusts, disputed ownership, business interests or uncertainty about which jurisdiction applies. Establishing that an asset exists does not settle how it must be administered.
 
