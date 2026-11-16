@@ -1,6 +1,8 @@
 ---
 title: What Happens to a Bank Account When Someone Dies?
 date: 2026-09-15T21:24:00.000+02:00
+# Substantial guide revision recorded in Git commit fbd5cfc (SEO-04).
+updated: "2026-11-13T02:21:32+05:00"
 image: /uploads/chatgpt-image-sep-16-2026-08_56_38-am.png
 excerpt: Learn what happens to sole and joint bank accounts after death in the UK,
   when probate may be needed and how to trace missing accounts.

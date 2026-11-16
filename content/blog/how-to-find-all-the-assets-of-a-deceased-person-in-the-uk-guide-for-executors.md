@@ -1,6 +1,8 @@
 ---
 title: "How to Find Assets of a Deceased Person in the UK: A Guide for Executors"
 date: 2026-08-09T15:21:00.000+02:00
+# Substantial guide revision recorded in Git commit 1277fe8 (SEO-07).
+updated: "2026-11-16T14:18:55+05:00"
 excerpt: A practical guide for executors tracing bank accounts, pensions, shares
   and other assets, checking liabilities and obtaining date-of-death values.
 seo:

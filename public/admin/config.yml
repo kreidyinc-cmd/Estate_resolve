@@ -27,6 +27,12 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - label: "Last Substantial Update"
+        name: "updated"
+        widget: "datetime"
+        required: false
+        default: ""
+        hint: "Optional: record the actual date of a substantial content revision, never a future date or a routine save. Leave the original Publish Date unchanged."
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Summary / Excerpt", name: "excerpt", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -73,6 +79,12 @@ collections:
           - "Industry News"
           - "General Help Articles"
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - label: "Last Substantial Update"
+        name: "updated"
+        widget: "datetime"
+        required: false
+        default: ""
+        hint: "Optional: record the actual date of a substantial content revision, never a future date or a routine save. Leave the original Publish Date unchanged."
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Summary / Excerpt", name: "excerpt", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
