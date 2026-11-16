@@ -17,6 +17,7 @@ export type BlogPostSeo = {
 export type BlogPostFrontmatter = {
   title: string;
   date: string;
+  updated?: string;
   image?: string;
   excerpt: string;
   seo?: BlogPostSeo;

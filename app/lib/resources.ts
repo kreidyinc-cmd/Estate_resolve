@@ -56,6 +56,7 @@ export type ResourceFrontmatter = {
   title: string;
   category: string;
   date: string;
+  updated?: string;
   image?: string;
   excerpt: string;
   seo?: ResourceSeo;
