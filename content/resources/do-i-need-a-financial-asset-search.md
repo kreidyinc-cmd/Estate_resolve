@@ -2,6 +2,7 @@
 title: "Do I Need a Financial Asset Search?"
 category: "FAQs"
 date: "2026-07-10T09:00:00.000Z"
+updated: "2026-11-17T01:27:45+05:00"
 excerpt: "Decide whether direct enquiries, free tracing tools or a paid financial asset search make sense for a deceased estate, and understand what each can and cannot establish."
 seo:
   title: "Do I Need a Financial Asset Search for an Estate?"
