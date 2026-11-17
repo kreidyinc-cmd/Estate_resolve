@@ -3,9 +3,9 @@ import { PageHero } from "@/app/components/PageHero";
 import { buildMetadata } from "@/app/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Personal Asset Search in the UK",
+  title: "Personal Asset Search UK for Lost Financial Assets",
   description:
-    "Explore personal asset searches in the UK, free tools for lost bank accounts, pensions and investments, and when professional assistance may help.",
+    "Discuss a UK personal asset search for forgotten bank accounts, savings, investments or pensions. Learn who can enquire, what a search may cover and its limits.",
   path: "/personal-asset-search",
 });
 
@@ -19,6 +19,21 @@ const assetTypes = [
   "Savings, ISAs and other investment products",
   "Shares and records held by share registrars",
   "Pensions and insurance policies",
+] as const;
+
+const reasonsToSearch = [
+  "You have lost track of an older bank or savings account.",
+  "A previous name or address may be associated with financial records.",
+  "Pension, investment or shareholding paperwork is incomplete.",
+  "Several possible providers may need separate enquiries.",
+] as const;
+
+const informationToPrepare = [
+  "Your full name, previous names and addresses, with approximate dates where known.",
+  "Names of known banks, investment providers, insurers or former employers.",
+  "Any existing statements, account references or correspondence.",
+  "Details of enquiries you have already made and questions still unresolved.",
+  "Evidence of authority if you are acting for another living person.",
 ] as const;
 
 const searchSteps = [
@@ -59,9 +74,9 @@ const searchOutcomes = [
 
 const personalSearchFaqs = [
   {
-    question: "Can I search for financial assets in my own name?",
+    question: "Who can request a personal asset search?",
     answer:
-      "Yes. Start with your records and any providers you remember. Previous names, addresses and employment details may help connect older records to you. You can use relevant free tracing tools or discuss a personal search with Estate Resolve.",
+      "The account holder can enquire about assets in their own name. A properly authorised representative, attorney or deputy may also enquire on behalf of a living person. Estate Resolve will need to confirm the authority and scope before any search begins.",
   },
   {
     question: "Can I search for another living person's assets?",
@@ -69,24 +84,29 @@ const personalSearchFaqs = [
       "Only with proper authority. Estate Resolve's service is for the account holder or a properly authorised representative, attorney or deputy. A family relationship alone is not sufficient authority to investigate someone's private finances. Confirm the evidence required before any search begins.",
   },
   {
-    question: "Do I have to pay to find forgotten bank accounts?",
+    question: "What assets might a personal search investigate?",
     answer:
-      "No. My Lost Account and Gretel provide free tracing options, and you can contact a known provider directly. Professional assistance is optional. Estate Resolve confirms its total fee in writing before the search begins.",
+      "Depending on the agreed scope and information available, enquiries may concern bank and building society accounts, savings, investments, shares, pensions or insurance policies. No search covers every provider or product.",
   },
   {
-    question: "Will the Pension Tracing Service tell me how much I have?",
+    question: "Do I need to pay to look for forgotten assets?",
     answer:
-      "No. The government service provides pension scheme contact details. It does not confirm that you have a pension or give its value. You must follow up with the scheme or provider to establish whether it holds a pension for you.",
+      "No. You can review your own records, contact known providers and use relevant free tracing services. Professional assistance is optional. Ask Estate Resolve about the proposed personal-search scope and fee before deciding whether to instruct us.",
   },
   {
-    question: "Can I start without an account or policy number?",
+    question: "Can I enquire without an account or policy number?",
     answer:
-      "You can make an initial enquiry using the details you do have. Previous names and addresses, approximate dates and provider or employer names may help. Each tracing service or institution has its own requirements, and incomplete information can limit a search.",
+      "Yes. Previous names and addresses, approximate dates, provider or employer names and any old correspondence may help. Incomplete information can limit the enquiries available, so explain what you already know when you contact us.",
   },
   {
     question: "Will a search find every asset or guarantee a payment?",
     answer:
       "No. A search cannot guarantee that every financial relationship will be found. Any match needs checking with the relevant provider, which determines what evidence is needed and whether a claim can be paid.",
+  },
+  {
+    question: "How can I discuss the scope and fee?",
+    answer:
+      "Contact Estate Resolve and explain whether you are searching for yourself or an authorised living person, what assets are in question and which enquiries you have already made. We can discuss the proposed scope and confirm the total fee in writing before a search begins.",
   },
 ] as const;
 
@@ -103,7 +123,25 @@ export default function PersonalAssetSearchPage() {
       <PageHero
         eyebrow="Personal Asset Search"
         title="Find Lost or Forgotten Financial Assets in Your Name"
-        description="Look for forgotten bank accounts, savings, investments and pensions in your own name. Explore free UK tracing options and understand when Estate Resolve's personal search service may help."
+        descriptionClassName="mt-6 max-w-3xl space-y-5 text-base leading-8 text-white/80 sm:text-lg"
+        description={
+          <>
+            <p>
+              Estate Resolve helps living individuals and properly authorised
+              representatives investigate potentially forgotten bank accounts,
+              savings, investments and pensions within an agreed personal-search
+              scope.
+            </p>
+            <p>
+              Structured enquiries and a written report can help you understand
+              available findings, unresolved questions and possible next steps.
+              A search cannot guarantee a match or payment.
+            </p>
+            <Link href="/contact" className={contactLinkClassName}>
+              Discuss a Personal Asset Search
+            </Link>
+          </>
+        }
       />
 
       <section className="py-20">
@@ -126,23 +164,15 @@ export default function PersonalAssetSearchPage() {
               Finding a possible match does not establish entitlement to money.
             </p>
             <p className="mt-4 text-sm leading-8 text-brand-slate">
-              You can start with free tracing services and direct enquiries to
-              providers. Paying for assistance is optional. Explore the{" "}
-              <a href="#free-bank-account-search" className={textLinkClassName}>
-                free routes below
-              </a>{" "}
-              before deciding what support you need.
+              You can review your own records and contact known providers
+              directly. Professional assistance is optional; its value may be
+              in organising several enquiries and making the results easier to
+              review.
             </p>
             <p className="mt-4 text-sm leading-8 text-brand-slate">
-              The total fee will be confirmed with you in writing before the
-              search begins.
+              Ask us about the proposed scope and total fee before deciding
+              whether to proceed.
             </p>
-            <Link
-              href="/contact"
-              className={`mt-8 ${contactLinkClassName}`}
-            >
-              Discuss a Personal Search
-            </Link>
           </article>
 
           <div className="grid min-w-0 gap-6">
@@ -192,109 +222,59 @@ export default function PersonalAssetSearchPage() {
       </section>
 
       <section
-        id="free-bank-account-search"
-        aria-labelledby="free-bank-heading"
-        className="scroll-mt-24 border-y border-brand-border bg-white py-16 md:py-20"
+        aria-labelledby="personal-search-reasons"
+        className="border-y border-brand-border bg-white py-16 md:py-20"
       >
         <div className="site-container">
-          <h2 id="free-bank-heading" className={sectionHeadingClassName}>
-            How to find lost bank accounts for free
+          <h2 id="personal-search-reasons" className={sectionHeadingClassName}>
+            When might a personal asset search help?
           </h2>
           <div className="mt-6 max-w-3xl space-y-4 text-sm leading-8 text-brand-slate">
             <p>
-              You do not need to pay a search firm to begin looking for
-              forgotten accounts. Start with the information you already have
-              and use the relevant free tools.
+              A personal search may be worth discussing when you have a
+              reasonable question about a financial relationship but cannot
+              resolve it from the records available to you.
             </p>
-            <ol className="list-decimal space-y-4 pl-5">
-              <li>
-                <strong className="text-brand-navy">Check your records.</strong>{" "}
-                Look through old statements, passbooks and emails for provider
-                names, account numbers and previous addresses. Transfers shown
-                on another account may provide a useful clue.
-              </li>
-              <li>
-                <strong className="text-brand-navy">
-                  Contact a known provider.
-                </strong>{" "}
-                If you remember the bank, building society or NS&amp;I product,
-                approach the provider directly using its official contact
-                details. Ask what evidence it needs to locate the account and
-                confirm your identity.
-              </li>
-              <li>
-                <strong className="text-brand-navy">
-                  Try a free tracing route.
-                </strong>{" "}
-                My Lost Account is free for tracing lost UK personal bank,
-                building society and NS&amp;I accounts. It is not a search for
-                every active account, pension, investment or overseas asset.
-              </li>
-            </ol>
+            <ul className="list-disc space-y-3 pl-5 marker:text-brand-gold">
+              {reasonsToSearch.map((reason) => (
+                <li key={reason}>{reason}</li>
+              ))}
+            </ul>
             <p>
-              <a
-                href="https://www.moneyhelper.org.uk/en/blog/everyday-money/how-to-find-old-bank-account"
-                className={textLinkClassName}
-              >
-                MoneyHelper&apos;s guide to finding old bank accounts
-              </a>{" "}
-              explains how to gather details and follow up with providers,
-              including where an old bank or building society has merged.
+              These are reasons for further enquiry, not evidence that an
+              account or payment exists. If you know the provider, contacting
+              it directly may be a useful first step.
             </p>
           </div>
         </div>
       </section>
 
       <section
-        aria-labelledby="pensions-investments-heading"
+        aria-labelledby="personal-search-preparation"
         className="py-16 md:py-20"
       >
         <div className="site-container">
-          <h2 id="pensions-investments-heading" className={sectionHeadingClassName}>
-            How to trace old pensions and investments
+          <h2 id="personal-search-preparation" className={sectionHeadingClassName}>
+            What information should you prepare?
           </h2>
-          <div className="mt-8 grid gap-6 md:grid-cols-2">
-            <article className="min-w-0 border border-brand-border bg-white p-6 sm:p-8">
-              <h3 className="font-serif text-2xl font-semibold text-brand-navy">
-                Find old pension scheme contacts
-              </h3>
-              <p className="mt-4 text-sm leading-8 text-brand-slate">
-                Start with a former employer or a pension provider you
-                recognise. If you need current contact details, the free{" "}
-                <a
-                  href="https://www.gov.uk/find-pension-contact-details"
-                  className={textLinkClassName}
-                >
-                  government Pension Tracing Service
-                </a>{" "}
-                can help you find a workplace or personal pension scheme using
-                an employer or provider name.
-              </p>
-              <p className="mt-4 text-sm leading-8 text-brand-slate">
-                It does not confirm whether you have a pension or what it is
-                worth. Contact the scheme or provider to establish whether it
-                holds benefits for you. Locating a pension is separate from
-                deciding whether to transfer it or take benefits.
-              </p>
-            </article>
-            <article className="min-w-0 border border-brand-border bg-brand-ivory p-6 sm:p-8">
-              <h3 className="font-serif text-2xl font-semibold text-brand-navy">
-                Follow up on savings, investments and shares
-              </h3>
-              <p className="mt-4 text-sm leading-8 text-brand-slate">
-                Old investment statements, share certificates and dividend
-                records can point to a provider or share registrar to contact.
-                Ask it to check the holding and explain any evidence needed
-                before you can reclaim money or update the records.
-              </p>
-              <p className="mt-4 text-sm leading-8 text-brand-slate">
-                The Investment Association&apos;s free Unclaimed Assets Portal
-                is powered by Gretel. It checks your details against records
-                from participating financial companies seeking customers they
-                have lost contact with. It uses the Gretel platform, rather
-                than providing a separate search of all investment providers.
-              </p>
-            </article>
+          <div className="mt-6 max-w-3xl space-y-4 text-sm leading-8 text-brand-slate">
+            <p>
+              You do not need an account number to make an initial enquiry.
+              The following details can help establish what may be searched:
+            </p>
+            <ul className="list-disc space-y-3 pl-5 marker:text-brand-gold">
+              {informationToPrepare.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <p>
+              Tell us what you already know through the{" "}
+              <Link href="/contact" className={textLinkClassName}>
+                personal-search enquiry route
+              </Link>
+              . We will discuss what evidence may be needed before any search
+              begins.
+            </p>
           </div>
         </div>
       </section>
@@ -303,58 +283,44 @@ export default function PersonalAssetSearchPage() {
         <div className="site-container grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="min-w-0">
             <h2 className={sectionHeadingClassName}>
-              Free tracing tools versus professional assistance
+              Why consider professional assistance?
             </h2>
             <div className="mt-6 space-y-4 text-sm leading-8 text-brand-slate">
               <p>
-                Free services can be a practical first step. In addition to
-                My Lost Account and the government pension tool, Gretel
-                describes its service as free to join and use. It looks for
-                lost financial assets with participating providers, including
-                bank accounts, pensions, investments and shares.
+                When records are incomplete or several institutions may need
+                contacting, a structured search can help organise enquiries
+                within a scope agreed with you.
               </p>
               <p>
-                These tools have different scopes. Gretel does not include
-                every provider, and the government pension tool supplies
-                contact details rather than account balances. Free tracing
-                also does not mean every later step is free: Gretel notes that
-                a matched provider may charge to reissue certificates or
-                payments.
+                Estate Resolve&apos;s report can bring together available
+                responses, possible matches, unanswered questions and
+                suggested follow-up. You can then decide what to check with
+                the relevant provider.
               </p>
               <p>
-                Paying for assistance is a choice, not a requirement for
-                finding unclaimed financial assets. It does not give you
-                exclusive access to records or remove a provider&apos;s
-                identity and entitlement checks.
-              </p>
-              <p>
-                For an independent overview of free routes, see{" "}
-                <a
-                  href="https://www.moneysavingexpert.com/reclaim/reclaim-lost-assets-free/"
-                  className={textLinkClassName}
-                >
-                  MoneySavingExpert&apos;s guide to reclaiming lost assets for free
-                </a>
-                .
+                Professional assistance is optional. You can inspect your
+                records, contact known providers and use relevant free tracing
+                routes yourself. A paid search does not give exclusive access
+                to records or remove provider identity and entitlement checks.
               </p>
             </div>
+            <Link href="/contact" className={`mt-8 ${contactLinkClassName}`}>
+              Enquire About a Personal Search
+            </Link>
           </div>
           <article className="min-w-0 self-start border border-brand-border bg-brand-ivory p-6 sm:p-8">
-            <h2 className="font-serif text-2xl font-semibold text-brand-navy">
-              When professional support might be useful
-            </h2>
+            <h3 className="font-serif text-2xl font-semibold text-brand-navy">
+              Agree the scope before instructing us
+            </h3>
             <p className="mt-4 text-sm leading-8 text-brand-slate">
-              You may want help if records are incomplete, several providers
-              need follow-up, or you would value a written summary of search
-              findings. An authorised representative may also want support
-              understanding what remains to be checked.
+              Tell us whether the search is for you or someone you are
+              authorised to represent, which assets or providers are in
+              question, and what earlier enquiries have established.
             </p>
             <p className="mt-4 text-sm leading-8 text-brand-slate">
-              Before paying for a personal asset search, identify the gaps left
-              by your own enquiries. Ask Estate Resolve which of those gaps
-              the proposed search can address and what will be included in the
-              report. Professional support cannot guarantee that money will
-              be found.
+              We can discuss what enquiries may be appropriate, what the
+              report would cover and the total fee before work begins. Neither
+              a possible match nor a negative result is definitive.
             </p>
           </article>
         </div>
@@ -443,21 +409,21 @@ export default function PersonalAssetSearchPage() {
         <div className="site-container">
           <div className="max-w-3xl">
             <h2 id="personal-search-contact" className={sectionHeadingClassName}>
-              Contact and next steps
+              Discuss your personal asset search
             </h2>
             <p className="mt-6 text-sm leading-8 text-brand-slate">
-              If you would like help after exploring the free options, tell us
-              what you are looking for, whether you are acting for yourself or
-              someone else, and which providers you have already contacted.
-              We can discuss the proposed search and the information needed
-              before you decide whether to proceed.
+              Tell us whether you are searching for yourself or an authorised
+              living person, which assets are in question, what information
+              you have and whether earlier enquiries were unsuccessful or
+              incomplete. We can discuss the proposed scope and what may be
+              needed before you decide whether to proceed.
             </p>
             <p className="mt-4 text-sm leading-8 text-brand-slate">
               The total fee will be confirmed with you in writing before the
               search begins.
             </p>
             <Link href="/contact" className={`mt-8 ${contactLinkClassName}`}>
-              Discuss a Personal Search
+              Discuss a Personal Asset Search
             </Link>
           </div>
         </div>
