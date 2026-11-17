@@ -151,25 +151,25 @@ export default function PersonalAssetSearchPage() {
             <h2 className={`mt-5 ${sectionHeadingClassName}`}>
               What is a personal asset search?
             </h2>
-            <p className="mt-5 text-sm leading-8 text-brand-slate">
+            <p className="mt-5 text-base leading-8 text-brand-slate">
               A personal asset search is a series of enquiries to help identify
               financial accounts or policies you may have lost track of. It can
               be useful after a house move, a change of name or a period of
               incomplete financial records.
             </p>
-            <p className="mt-4 text-sm leading-8 text-brand-slate">
+            <p className="mt-4 text-base leading-8 text-brand-slate">
               Estate Resolve helps individuals search for potentially forgotten
               or unclaimed financial assets in their own name and provides a
               clear written report of the results and possible next steps.
               Finding a possible match does not establish entitlement to money.
             </p>
-            <p className="mt-4 text-sm leading-8 text-brand-slate">
+            <p className="mt-4 text-base leading-8 text-brand-slate">
               You can review your own records and contact known providers
               directly. Professional assistance is optional; its value may be
               in organising several enquiries and making the results easier to
               review.
             </p>
-            <p className="mt-4 text-sm leading-8 text-brand-slate">
+            <p className="mt-4 text-base leading-8 text-brand-slate">
               Ask us about the proposed scope and total fee before deciding
               whether to proceed.
             </p>
@@ -180,19 +180,19 @@ export default function PersonalAssetSearchPage() {
               <h2 className="font-serif text-2xl font-semibold text-brand-navy">
                 Who can request a search?
               </h2>
-              <p className="mt-4 text-sm leading-7 text-brand-slate">
+              <p className="mt-4 text-base leading-7 text-brand-slate">
                 This service is available only to:
               </p>
-              <ul className="mt-5 list-disc space-y-3 pl-5 text-sm leading-7 text-brand-slate">
+              <ul className="mt-5 list-disc space-y-3 pl-5 text-base leading-7 text-brand-slate">
                 {eligibilityItems.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
-              <p className="mt-5 text-sm leading-7 text-brand-slate">
+              <p className="mt-5 text-base leading-7 text-brand-slate">
                 It must not be used to investigate the private financial
                 affairs of another living person without proper authority.
               </p>
-              <p className="mt-4 text-sm leading-7 text-brand-slate">
+              <p className="mt-4 text-base leading-7 text-brand-slate">
                 This page is for living individuals. If you are dealing with
                 someone who has died, see our{" "}
                 <Link href="/services" className={textLinkClassName}>
@@ -206,12 +206,12 @@ export default function PersonalAssetSearchPage() {
               <h2 className="font-serif text-2xl font-semibold text-brand-navy">
                 What financial assets might be traced?
               </h2>
-              <ul className="mt-5 list-disc space-y-3 pl-5 text-sm leading-7 text-brand-slate">
+              <ul className="mt-5 list-disc space-y-3 pl-5 text-base leading-7 text-brand-slate">
                 {assetTypes.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
-              <p className="mt-5 text-sm leading-7 text-brand-slate">
+              <p className="mt-5 text-base leading-7 text-brand-slate">
                 These are types of financial relationships to consider, not a
                 promise that every provider or product can be searched. Confirm
                 the scope of your personal search before instructing us.
@@ -229,7 +229,7 @@ export default function PersonalAssetSearchPage() {
           <h2 id="personal-search-reasons" className={sectionHeadingClassName}>
             When might a personal asset search help?
           </h2>
-          <div className="mt-6 max-w-3xl space-y-4 text-sm leading-8 text-brand-slate">
+          <div className="mt-6 max-w-3xl space-y-4 text-base leading-8 text-brand-slate">
             <p>
               A personal search may be worth discussing when you have a
               reasonable question about a financial relationship but cannot
@@ -257,7 +257,7 @@ export default function PersonalAssetSearchPage() {
           <h2 id="personal-search-preparation" className={sectionHeadingClassName}>
             What information should you prepare?
           </h2>
-          <div className="mt-6 max-w-3xl space-y-4 text-sm leading-8 text-brand-slate">
+          <div className="mt-6 max-w-3xl space-y-4 text-base leading-8 text-brand-slate">
             <p>
               You do not need an account number to make an initial enquiry.
               The following details can help establish what may be searched:
@@ -285,7 +285,7 @@ export default function PersonalAssetSearchPage() {
             <h2 className={sectionHeadingClassName}>
               Why consider professional assistance?
             </h2>
-            <div className="mt-6 space-y-4 text-sm leading-8 text-brand-slate">
+            <div className="mt-6 space-y-4 text-base leading-8 text-brand-slate">
               <p>
                 When records are incomplete or several institutions may need
                 contacting, a structured search can help organise enquiries
@@ -312,12 +312,12 @@ export default function PersonalAssetSearchPage() {
             <h3 className="font-serif text-2xl font-semibold text-brand-navy">
               Agree the scope before instructing us
             </h3>
-            <p className="mt-4 text-sm leading-8 text-brand-slate">
+            <p className="mt-4 text-base leading-8 text-brand-slate">
               Tell us whether the search is for you or someone you are
               authorised to represent, which assets or providers are in
               question, and what earlier enquiries have established.
             </p>
-            <p className="mt-4 text-sm leading-8 text-brand-slate">
+            <p className="mt-4 text-base leading-8 text-brand-slate">
               We can discuss what enquiries may be appropriate, what the
               report would cover and the total fee before work begins. Neither
               a possible match nor a negative result is definitive.
@@ -344,7 +344,7 @@ export default function PersonalAssetSearchPage() {
                 <h3 className="mt-4 font-serif text-xl font-semibold text-brand-navy">
                   {step.title}
                 </h3>
-                <p className="mt-4 text-sm leading-8 text-brand-slate">
+                <p className="mt-4 text-base leading-8 text-brand-slate">
                   {step.description}
                 </p>
               </li>
@@ -370,7 +370,7 @@ export default function PersonalAssetSearchPage() {
                 <h3 className="font-serif text-xl font-semibold text-brand-navy">
                   {outcome.title}
                 </h3>
-                <p className="mt-4 text-sm leading-8 text-brand-slate">
+                <p className="mt-4 text-base leading-8 text-brand-slate">
                   {outcome.description}
                 </p>
               </article>
@@ -393,7 +393,7 @@ export default function PersonalAssetSearchPage() {
                 <h3 className="font-serif text-xl font-semibold text-brand-navy">
                   {faq.question}
                 </h3>
-                <p className="mt-4 text-sm leading-8 text-brand-slate">
+                <p className="mt-4 text-base leading-8 text-brand-slate">
                   {faq.answer}
                 </p>
               </article>
@@ -411,14 +411,14 @@ export default function PersonalAssetSearchPage() {
             <h2 id="personal-search-contact" className={sectionHeadingClassName}>
               Discuss your personal asset search
             </h2>
-            <p className="mt-6 text-sm leading-8 text-brand-slate">
+            <p className="mt-6 text-base leading-8 text-brand-slate">
               Tell us whether you are searching for yourself or an authorised
               living person, which assets are in question, what information
               you have and whether earlier enquiries were unsuccessful or
               incomplete. We can discuss the proposed scope and what may be
               needed before you decide whether to proceed.
             </p>
-            <p className="mt-4 text-sm leading-8 text-brand-slate">
+            <p className="mt-4 text-base leading-8 text-brand-slate">
               The total fee will be confirmed with you in writing before the
               search begins.
             </p>
