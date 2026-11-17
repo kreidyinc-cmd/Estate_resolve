@@ -55,7 +55,7 @@ const assetTypes = [
   {
     title: "NS&I savings and investments",
     paragraphs: [
-      "NS&I products may also require investigation. Executors should be aware that free NS&I tracing procedures are available.",
+      "NS&I products may also require investigation. Whether they are included depends on the agreed scope and the information available.",
     ],
   },
   {
@@ -139,33 +139,11 @@ const searchOptions = [
   },
 ];
 
-const freeTracingServices = [
-  {
-    title: "My Lost Account",
-    paragraphs: [
-      "My Lost Account offers a free tracing route for lost UK bank, building-society and NS&I accounts.",
-      "It is not a universal search for every active account, pension or investment.",
-    ],
-    href: "https://www.mylostaccount.org.uk/start-search",
-    linkLabel: "Start a My Lost Account search",
-  },
-  {
-    title: "NS&I tracing services",
-    paragraphs: [
-      "NS&I provides information about tracing lost savings and investments.",
-    ],
-    href: "https://www.nsandi.com/help/lost-touch-with-nsandi/track-lost-investments",
-    linkLabel: "Read NS&I tracing guidance",
-  },
-  {
-    title: "Pension Tracing Service",
-    paragraphs: [
-      "GOV.UK provides a Pension Tracing Service to help people find pension scheme contact details.",
-      "The service does not confirm whether a pension exists or what it is worth.",
-    ],
-    href: "https://www.gov.uk/find-pension-contact-details",
-    linkLabel: "Find pension contact details on GOV.UK",
-  },
+const reasonsToConsiderSearch = [
+  "Financial statements or other estate records are incomplete.",
+  "A bank account, investment, savings product or pension relationship remains uncertain.",
+  "Previous addresses or several possible providers make enquiries harder to organise.",
+  "The executor or adviser needs a record of enquiries and outstanding questions before progressing the estate administration.",
 ];
 
 const serviceFaqs = [
@@ -213,7 +191,7 @@ const textLinkClassName =
 const primaryLinkClassName =
   "inline-flex w-full items-center justify-center border border-brand-gold bg-brand-gold px-6 py-4 text-center text-xs leading-5 font-semibold uppercase tracking-[0.12em] text-brand-navy hover:bg-brand-gold-light focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold sm:w-auto";
 const secondaryLinkClassName =
-  "inline-flex w-full items-center justify-center border border-brand-gold px-6 py-4 text-center text-xs leading-5 font-semibold uppercase tracking-[0.12em] text-brand-navy hover:bg-brand-gold-light focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold sm:w-auto";
+  "inline-flex w-full items-center justify-center border border-brand-navy px-6 py-4 text-center text-xs leading-5 font-semibold uppercase tracking-[0.12em] text-brand-navy hover:bg-brand-navy hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold sm:w-auto";
 
 export default function ServicesPage() {
   return (
@@ -226,33 +204,29 @@ export default function ServicesPage() {
         description={
           <>
             <p>
-              A deceased person may have held savings, bank accounts,
-              investments, pensions or insurance policies that are not
-              immediately apparent from the records available to their executor.
-              Estate Resolve helps authorised executors, administrators and
-              professional representatives make structured enquiries about
-              financial assets that may need to be considered when administering
-              an estate.
+              Estate Resolve helps executors, estate administrators, authorised
+              personal representatives and solicitors investigate financial
+              relationships that may not be apparent from a deceased person&apos;s
+              records.
             </p>
             <p>
-              Our service is designed to bring the enquiry process together and
-              present the results in a clear report, so you can identify what has
-              been checked, understand outstanding questions and decide what
-              needs to happen next.
+              We agree the search scope, make structured enquiries and report
+              the available findings and unanswered questions. This can help
+              you decide what further checks the estate may need.
             </p>
             <p>
-              A search cannot guarantee that every asset will be located or that
-              a potential match establishes ownership or entitlement.
+              Results depend on the agreed scope and provider responses; a
+              possible match does not establish ownership or entitlement.
             </p>
             <div className="flex flex-col gap-4 pt-3 sm:flex-row sm:flex-wrap">
               <Link href="/start-a-case" className={primaryLinkClassName}>
                 Start an Estate Search
               </Link>
               <Link
-                href="/sample-reports"
+                href="/contact"
                 className="inline-flex w-full items-center justify-center border border-brand-gold px-6 py-4 text-center text-xs leading-5 font-semibold uppercase tracking-[0.12em] text-white hover:bg-brand-gold-light hover:text-brand-navy focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-gold sm:w-auto"
               >
-                View an Illustrative Report
+                Discuss an Estate Search
               </Link>
             </div>
           </>
@@ -278,14 +252,9 @@ export default function ServicesPage() {
             </p>
             <p>
               Identifying the estate&apos;s assets and debts is an important part
-              of estate administration.{" "}
-              <a
-                href="https://www.gov.uk/valuing-estate-of-someone-who-died/identify-assets-debts"
-                className={textLinkClassName}
-              >
-                GOV.UK explains the need to examine records and contact relevant
-                organisations for information about assets and liabilities.
-              </a>
+              of estate administration. Executors can examine records and
+              contact known organisations directly. GOV.UK guidance on valuing
+              an estate also describes identifying its assets and debts.
             </p>
             <p>
               An asset-search result is information to investigate. An indication
@@ -294,6 +263,16 @@ export default function ServicesPage() {
               withdraw funds.
             </p>
             <p>Further checks with the relevant institution may be necessary.</p>
+            <p>
+              For practical ways to begin, read our{" "}
+              <Link
+                href="/blog/find-assets-deceased-person"
+                className={textLinkClassName}
+              >
+                guide to finding assets of someone who has died
+              </Link>
+              .
+            </p>
           </div>
         </div>
       </section>
@@ -334,7 +313,7 @@ export default function ServicesPage() {
             </p>
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-6">
               <Link href="/how-it-works" className={textLinkClassName}>
-                How It Works
+                See How It Works
               </Link>
               <Link href="/solicitors" className={textLinkClassName}>
                 Services for Solicitors
@@ -409,6 +388,12 @@ export default function ServicesPage() {
               Learn How Estate Searches Work
             </Link>
           </p>
+          <p className="mt-4 text-base leading-8">
+            <Link href="/contact" className={textLinkClassName}>
+              Discuss an Estate Search
+            </Link>{" "}
+            if you need help choosing an appropriate scope.
+          </p>
         </div>
       </section>
 
@@ -482,7 +467,7 @@ export default function ServicesPage() {
           </p>
           <div className="mt-6">
             <Link href="/sample-reports" className={secondaryLinkClassName}>
-              View an Illustrative Asset Discovery Report
+              View an Illustrative Report
             </Link>
           </div>
           <p className="mt-4 max-w-3xl text-sm leading-7 text-brand-slate">
@@ -517,74 +502,64 @@ export default function ServicesPage() {
           </p>
           <div className="mt-6">
             <Link href="/pricing" className={primaryLinkClassName}>
-              View Current Packages and Pricing
+              View Search Packages
             </Link>
           </div>
+          <p className="mt-5 max-w-3xl text-base leading-8 text-brand-slate">
+            Ready to discuss your estate&apos;s circumstances?{" "}
+            <Link href="/book-a-consultation" className={textLinkClassName}>
+              Book a Consultation
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
       <section
-        aria-labelledby="self-directed-search"
+        aria-labelledby="professional-search"
         className="border-y border-brand-border bg-white py-16 md:py-20"
       >
         <div className="site-container">
-          <h2 id="self-directed-search" className={headingClassName}>
-            Can you search for missing financial assets yourself?
+          <h2 id="professional-search" className={headingClassName}>
+            When Is a Professional Estate Asset Search Worth Considering?
           </h2>
           <div className="mt-6 max-w-3xl space-y-4 text-base leading-8 text-brand-slate">
             <p>
-              Yes. Executors can begin by examining the deceased person&apos;s
-              records, financial correspondence, previous addresses and known
-              providers.
+              A professional search may be useful when you have reasonable
+              questions about the estate&apos;s financial relationships and want
+              structured enquiries within an agreed scope.
             </p>
             <p>
-              Direct enquiries to financial institutions can be an important part
-              of this process.
+              Circumstances that may warrant further enquiries include:
+            </p>
+            <ul className="list-disc space-y-2 pl-6 marker:text-brand-gold">
+              {reasonsToConsiderSearch.map((reason) => (
+                <li key={reason}>{reason}</li>
+              ))}
+            </ul>
+            <p>
+              These are reasons to investigate, not evidence that an asset
+              exists. Estate Resolve can organise enquiries, follow up within
+              the agreed scope and report available responses and unresolved
+              questions. Results still depend on provider coverage, the
+              identifying information available and each institution&apos;s
+              response.
             </p>
             <p>
-              Several free official or industry-supported services may also help.
+              You can also review records and contact known providers yourself;
+              a paid search is optional. Our{" "}
+              <Link
+                href="/resources/do-i-need-a-financial-asset-search"
+                className={textLinkClassName}
+              >
+                decision guide on whether an asset search may help
+              </Link>{" "}
+              explains what to consider before instructing a service.
             </p>
-          </div>
-          <div className="mt-8 grid gap-px border border-brand-border bg-brand-border md:grid-cols-3">
-            {freeTracingServices.map((service) => (
-              <article key={service.title} className="min-w-0 bg-white p-6 sm:p-8">
-                <h3 className={subheadingClassName}>{service.title}</h3>
-                <div className="mt-4 space-y-4 text-base leading-8 text-brand-slate">
-                  {service.paragraphs.map((paragraph) => (
-                    <p key={paragraph}>{paragraph}</p>
-                  ))}
-                  <p>
-                    <a href={service.href} className={textLinkClassName}>
-                      {service.linkLabel}
-                    </a>
-                  </p>
-                </div>
-              </article>
-            ))}
-          </div>
-          <div className="mt-10 max-w-3xl">
-            <h3 className={subheadingClassName}>
-              When might a professional search be useful?
-            </h3>
-            <div className="mt-4 space-y-4 text-base leading-8 text-brand-slate">
-              <p>
-                A structured paid search may be worth considering when records
-                are incomplete, multiple providers may be involved, or an
-                executor wants consolidated enquiries and reporting.
-              </p>
-              <p>
-                A paid search does not replace free tracing routes, statutory
-                responsibilities, provider verification or specialist legal
-                advice.
-              </p>
-              <p>
-                <Link
-                  href="/blog/find-assets-deceased-person"
-                  className={textLinkClassName}
-                >
-                  How to Find Assets of a Deceased Person in the UK
-                </Link>
-              </p>
+            <div className="pt-3">
+              <Link href="/contact" className={primaryLinkClassName}>
+                Discuss an Estate Search
+              </Link>
             </div>
           </div>
         </div>
@@ -651,14 +626,16 @@ export default function ServicesPage() {
               <Link href="/start-a-case" className={primaryLinkClassName}>
                 Start an Estate Search
               </Link>
-              <Link href="/pricing" className={secondaryLinkClassName}>
-                Compare Packages and Fees
+              <Link href="/contact" className={secondaryLinkClassName}>
+                Discuss an Estate Search
               </Link>
             </div>
-            <p className="mt-6 text-base leading-8">
-              <Link href="/contact" className={textLinkClassName}>
-                Contact Estate Resolve
+            <p className="mt-6 text-base leading-8 text-brand-slate">
+              Want to compare the options first?{" "}
+              <Link href="/pricing" className={textLinkClassName}>
+                View Search Packages
               </Link>
+              .
             </p>
             <div className="mt-8 border-t border-brand-border pt-6 text-base leading-8 text-brand-slate">
               <p>
