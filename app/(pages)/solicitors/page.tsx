@@ -4,19 +4,18 @@ import { PageHero } from "@/app/components/PageHero";
 import { buildMetadata } from "@/app/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "For Solicitors & Professional Executors",
+  title: "Asset Search Services for Solicitors",
   description:
-    "Estate Resolve provides documented asset and liability search support for solicitors, professional executors, and advisers handling deceased estates.",
+    "Professional financial asset and liability search support for UK solicitors and estate executors. Explore service options, reporting and enquiries.",
   path: "/solicitors",
 });
 
 const supportPoints = [
-  "evidence of reasonable asset enquiries;",
-  "clear reporting for the estate file;",
-  "GDPR-conscious handling of personal data;",
-  "secure document collection;",
-  "confidentiality throughout the process;",
-  "a record of institutions contacted and responses received.",
+  "Financial records are incomplete, outdated or spread across several addresses.",
+  "The deceased may have held accounts, pensions or policies that are unfamiliar to the family.",
+  "The estate needs liability-related enquiries alongside asset tracing.",
+  "Overseas connections or business interests need a clearly defined search scope.",
+  "The firm needs a consolidated record of enquiries, responses and outstanding questions.",
 ] as const;
 
 const serviceOptions = [
@@ -66,7 +65,7 @@ const serviceOptions = [
     ctaHref: "#professional-enquiry",
     ctaLabel: "Request a scoped quote",
     description:
-      "Our most comprehensive search package for larger, higher-value or more complex estates, including enhanced research for cross-border and specialist matters.",
+      "An individually scoped search package for larger, higher-value or more complex estates, including enhanced research for cross-border and specialist matters.",
     details: [
       "Multiple asset classes",
       "Historic investments",
@@ -106,19 +105,55 @@ const comparisonRows = [
   ["New Zealand", "", "", "✓"],
 ] as const;
 
+const professionalFaqs = [
+  {
+    question: "Can a solicitor instruct a search on behalf of an executor?",
+    answer:
+      "Yes, where the solicitor has appropriate authority to act for the estate. The instruction and supporting documents must establish that authority before enquiries begin. Being a beneficiary or relative does not, by itself, establish authority to instruct a search.",
+  },
+  {
+    question: "Can we enquire before a grant has been issued?",
+    answer:
+      "You can discuss the service before a grant is available. Whether particular enquiries can proceed depends on the estate's circumstances, the evidence of authority and the requirements of each institution. A search does not remove a provider's requirements for releasing information or funds.",
+  },
+  {
+    question: "Do probate asset searches include liabilities?",
+    answer:
+      "The Asset & Liability Search adds the listed liability-related checks to the Standard Estate Search. The International Estate Search includes those elements as well. A register entry or possible match needs further investigation; a search is not a complete schedule of debts and does not establish the amount owed.",
+  },
+  {
+    question: "Will the report identify every asset or confirm entitlement?",
+    answer:
+      "No. Findings depend on the selected package, available records, identifying information and institution responses. A possible match is not proof of ownership, a date-of-death valuation or confirmation that money is payable to the estate. No match does not prove that no other assets exist.",
+  },
+  {
+    question: "How are overseas and complex estates handled?",
+    answer:
+      "The International Estate Search lists the UK and five overseas jurisdictions in its package details. The enquiries possible in a particular case depend on local access rules, documentation and available records. Additional jurisdictions and specialist matters should be discussed before instruction; bespoke work is individually scoped and quoted.",
+  },
+  {
+    question: "How long will a search take, and what happens afterwards?",
+    answer:
+      "Ask for the current estimated timescale when discussing the instruction. It depends on scope, documentation and provider responses. Review the report for potential matches and outstanding enquiries, then follow up with the relevant institutions to confirm ownership, value and any next steps.",
+  },
+] as const;
+
+const textLinkClassName =
+  "font-semibold text-brand-navy underline decoration-brand-gold underline-offset-4 hover:decoration-brand-navy focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-navy";
+
 export default function SolicitorsPage() {
   return (
     <main id="main-content" className="flex-1">
       <PageHero
         eyebrow="For Solicitors"
-        title="One Instruction. One Comprehensive Estate Asset Search."
+        title="Estate Asset Searches for Solicitors and Professional Executors"
         description={
           <>
             <p>
-              We help cut through a marketplace of thousands of financial products* to identify potential estate assets.
-            </p>
-            <p className="mt-4 text-sm opacity-75">
-              *Source: Moneyfacts Group research into the UK banking, savings, pension, insurance and investment marketplace.
+              Financial asset and liability search support for solicitors,
+              probate professionals and executors handling deceased estates.
+              Define the enquiries needed, review the available findings and
+              keep a documented record for the estate file.
             </p>
           </>
         }
@@ -126,51 +161,54 @@ export default function SolicitorsPage() {
 
       <section className="py-20">
         <div className="site-container grid gap-8 xl:grid-cols-[1.15fr_0.85fr]">
-          <article className="border border-brand-border bg-white p-8 md:p-10">
+          <article className="min-w-0 border border-brand-border bg-white p-6 sm:p-8 md:p-10">
             <div className="section-label">For Solicitors & Professional Executors</div>
             <h2 className="mt-5 font-serif text-[clamp(2rem,4vw,2.8rem)] leading-[1.16] font-semibold text-brand-navy">
-              Documented search support for professional estate administration
+              Asset search services for solicitors
             </h2>
             <p className="mt-5 text-sm leading-8 text-brand-slate">
-              Estate Resolve provides discreet, documented asset and liability
-              search support for solicitors, executors and professional advisers
-              dealing with deceased estates.
+              Estate Resolve supports professional estate administration with
+              structured enquiries into possible financial assets and, where
+              included in the selected package, potential liabilities. Searches
+              bring together information that can help a firm decide what needs
+              further investigation.
             </p>
             <p className="mt-4 text-sm leading-8 text-brand-slate">
-              Our service helps identify possible UK and international financial
-              assets, including bank accounts, building society accounts,
-              pensions, insurance policies, investments and shareholdings. We
-              provide a clear detailed report showing the institutions
-              contacted, the responses received, and any further action
-              required.
+              Deceased estate asset searches can cover enquiries relating to
+              bank and building society accounts, pensions, insurance policies
+              and investments within the agreed scope. A report records the
+              enquiries made, responses received and matters requiring follow-up.
             </p>
             <p className="mt-4 text-sm leading-8 text-brand-slate">
-              This can assist solicitors in demonstrating that reasonable
-              enquiries have been made before an estate is finalised, helping
-              reduce the risk of later-discovered assets, beneficiary disputes,
-              delays, or questions over the administration of the estate.
+              This record can support your estate file. It does not establish
+              that every asset has been found or that the executor&apos;s legal
+              duties have been discharged. Decisions about further enquiries
+              and estate administration remain with the executor and their advisers.
             </p>
             <p className="mt-4 text-sm leading-8 text-brand-slate">
-              Helps executors and solicitors identify estate assets and
-              liabilities more efficiently and with less administration.
+              See our <Link href="/services" className={textLinkClassName}>financial asset search services</Link>{" "}
+              for a wider explanation of what findings can and cannot tell you.
             </p>
+            <Link
+              href="#professional-enquiry"
+              className="mt-7 inline-flex w-full items-center justify-center border border-brand-gold bg-brand-gold px-6 py-4 text-center text-xs font-semibold uppercase tracking-[0.14em] text-brand-navy hover:bg-brand-gold-light focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-navy sm:w-auto"
+            >
+              Discuss a Professional Instruction
+            </Link>
           </article>
 
-          <article className="border border-brand-border bg-brand-ivory p-8">
+          <article className="min-w-0 border border-brand-border bg-brand-ivory p-6 sm:p-8">
             <h2 className="font-serif text-2xl font-semibold text-brand-navy">
-              Compliance, Confidentiality &amp; Documentation
+              Why firms commission estate asset searches
             </h2>
             <p className="mt-4 text-sm leading-7 text-brand-slate">
-              We understand the importance of compliance, confidentiality and
-              professional record-keeping in estate administration.
+              Financial asset searches for executors may be useful when the
+              existing records leave gaps or several lines of enquiry need
+              to be brought together.
             </p>
-            <p className="mt-4 text-sm leading-7 text-brand-slate">
-              We request only the information necessary to carry out the search
-              and provide a documented audit trail of enquiries made.
-            </p>
-            <ul className="mt-6 space-y-3 text-sm leading-7 text-brand-slate">
+            <ul className="mt-6 list-disc space-y-3 pl-5 text-sm leading-7 text-brand-slate marker:text-brand-gold">
               {supportPoints.map((point) => (
-                <li key={point}>• {point}</li>
+                <li key={point}>{point}</li>
               ))}
             </ul>
             <p className="mt-6 text-sm leading-7 text-brand-slate">
@@ -184,18 +222,50 @@ export default function SolicitorsPage() {
 
       <section className="pb-20">
         <div className="site-container">
+          <article className="border border-brand-border bg-brand-ivory p-6 sm:p-8 md:p-10">
+            <h2 className="font-serif text-2xl font-semibold text-brand-navy">
+              Service scope and limitations
+            </h2>
+            <div className="mt-5 grid gap-6 text-sm leading-8 text-brand-slate md:grid-cols-2">
+              <p>
+                The selected package defines the types of enquiry. Access to
+                information depends on the records available, the details and
+                authority supplied, and each institution&apos;s requirements.
+                A category in the comparison does not mean that every provider
+                or financial product in that category can be searched.
+              </p>
+              <p>
+                Asset and liability searches for probate do not guarantee a
+                complete inventory. They support the firm&apos;s enquiries and
+                do not replace its legal assessment, valuations, tax work or
+                decisions about administering and distributing the estate.
+                A result showing no match must be read within the search scope.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section className="pb-20">
+        <div className="site-container">
           <div className="section-label">Service Options</div>
           <h2 className="mt-5 max-w-4xl font-serif text-[clamp(2rem,4vw,2.9rem)] leading-[1.14] font-semibold text-brand-navy">
             Structured search packages for straightforward, complex, and
             international estate matters
           </h2>
+          <p className="mt-5 max-w-3xl text-sm leading-8 text-brand-slate">
+            The fixed package fees below match our{" "}
+            <Link href="/pricing" className={textLinkClassName}>pricing page</Link>.
+            Bespoke work is individually scoped and quoted. Discuss the estate&apos;s
+            circumstances and any specialist requirements before choosing a package.
+          </p>
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
             {serviceOptions.map((option) => (
               <article
                 key={option.title}
-                className="flex h-full flex-col border border-brand-border bg-white p-8"
+                className="flex h-full min-w-0 flex-col border border-brand-border bg-white p-6 sm:p-8"
               >
-                <div className="flex items-start justify-between gap-4">
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
                   <h3 className="font-serif text-[1.45rem] font-semibold text-brand-navy">
                     {option.title}
                   </h3>
@@ -220,7 +290,7 @@ export default function SolicitorsPage() {
                 ) : null}
                 <Link
                   href={option.ctaHref}
-                  className="mt-8 inline-flex w-fit border border-brand-gold bg-brand-gold px-6 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-white hover:bg-brand-gold-light hover:text-brand-navy"
+                  className="mt-8 inline-flex w-fit max-w-full border border-brand-gold bg-brand-gold px-6 py-3 text-center text-xs font-semibold uppercase tracking-[0.14em] text-brand-navy hover:bg-brand-gold-light focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-navy"
                 >
                   {option.ctaLabel}
                 </Link>
@@ -233,21 +303,34 @@ export default function SolicitorsPage() {
       <section className="pb-20">
         <div className="site-container">
           <div className="section-label">Service Comparison</div>
+          <h2 id="package-comparison" className="mt-5 font-serif text-2xl font-semibold text-brand-navy">
+            Compare estate asset and liability search packages
+          </h2>
           <article className="mt-5 border border-brand-border bg-white p-6 md:p-8">
-            <div className="overflow-x-auto">
+            <div
+              className="relative overflow-x-auto focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-navy"
+              role="region"
+              aria-labelledby="package-comparison"
+              tabIndex={0}
+            >
               <table className="min-w-full border-collapse">
+                <caption className="sr-only">
+                  Listed package features. A tick indicates inclusion, subject
+                  to the search scope and limitations. A blank cell means the
+                  feature is not listed for that package.
+                </caption>
                 <thead>
                   <tr className="border-b border-brand-border">
-                    <th className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.12em] text-brand-slate">
+                    <th scope="col" className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.12em] text-brand-slate">
                       Feature
                     </th>
-                    <th className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.12em] text-brand-slate">
+                    <th scope="col" className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.12em] text-brand-slate">
                       Standard Estate Search (£175)
                     </th>
-                    <th className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.12em] text-brand-slate">
+                    <th scope="col" className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.12em] text-brand-slate">
                       Asset &amp; Liability Search (£210)
                     </th>
-                    <th className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.12em] text-brand-slate">
+                    <th scope="col" className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.12em] text-brand-slate">
                       International Estate Search (£350)
                     </th>
                   </tr>
@@ -258,12 +341,17 @@ export default function SolicitorsPage() {
                       key={row[0]}
                       className="border-b border-brand-border last:border-b-0"
                     >
-                      <td className="px-4 py-3 text-sm font-semibold text-brand-navy">
+                      <th scope="row" className="px-4 py-3 text-left text-sm font-semibold text-brand-navy">
                         {row[0]}
-                      </td>
-                      <td className="px-4 py-3 text-sm text-brand-slate">{row[1]}</td>
-                      <td className="px-4 py-3 text-sm text-brand-slate">{row[2]}</td>
-                      <td className="px-4 py-3 text-sm text-brand-slate">{row[3]}</td>
+                      </th>
+                      {row.slice(1).map((value, index) => (
+                        <td key={index} className="px-4 py-3 text-sm text-brand-slate">
+                          <span aria-hidden="true">{value}</span>
+                          <span className="sr-only">
+                            {value ? "Listed for this package" : "Not listed for this package"}
+                          </span>
+                        </td>
+                      ))}
                     </tr>
                   ))}
                 </tbody>
@@ -274,7 +362,86 @@ export default function SolicitorsPage() {
               applicable laws, data availability and the requirements of the
               relevant institutions and jurisdictions.
             </p>
+            <p className="mt-4 text-sm leading-7 text-brand-slate">
+              Liability-related checks can identify matters to investigate;
+              they do not confirm every debt or its current balance. OPG checks
+              concern powers of attorney and deputyship records, rather than a
+              register of assets or debts. Overseas enquiries are subject to
+              local access rules and the documentation required in each case.
+            </p>
           </article>
+        </div>
+      </section>
+
+      <section className="pb-20">
+        <div className="site-container grid gap-8 xl:grid-cols-[1.05fr_0.95fr]">
+          <article className="min-w-0 border border-brand-border bg-white p-6 sm:p-8 md:p-10">
+            <h2 className="font-serif text-2xl font-semibold text-brand-navy">
+              Authority and documents before instruction
+            </h2>
+            <p className="mt-5 text-sm leading-8 text-brand-slate">
+              Establish who is instructing the search and their authority to
+              act for the estate. A solicitor acting for an executor or
+              administrator should be able to evidence that instruction.
+              Requirements depend on the estate and the enquiries requested.
+            </p>
+            <p className="mt-4 text-sm leading-8 text-brand-slate">
+              The existing case-start process asks for the following information
+              and supporting documents:
+            </p>
+            <ul className="mt-5 list-disc space-y-3 pl-5 text-sm leading-7 text-brand-slate marker:text-brand-gold">
+              <li>The deceased&apos;s full name, dates of birth and death, and relevant addresses.</li>
+              <li>The deceased&apos;s death certificate, plus identification and proof of address for the instructing person.</li>
+              <li>A completed Authority to Act form and evidence of the instructing person&apos;s role.</li>
+              <li>Relevant will or grant documentation where available, including confirmation for a Scottish estate where applicable.</li>
+              <li>Known providers, account references and other records that may help direct enquiries.</li>
+            </ul>
+            <p className="mt-5 text-sm leading-8 text-brand-slate">
+              You can enquire before a grant is available, but individual
+              providers may require further documents before releasing
+              information or funds. Read{" "}
+              <Link href="/how-it-works" className={textLinkClassName}>how the search process works</Link>{" "}
+              and access the Authority to Act form before preparing instructions.
+            </p>
+          </article>
+          <article className="min-w-0 border border-brand-border bg-brand-ivory p-6 sm:p-8">
+            <h2 className="font-serif text-2xl font-semibold text-brand-navy">
+              Reporting and professional next steps
+            </h2>
+            <p className="mt-5 text-sm leading-8 text-brand-slate">
+              Review the report alongside the agreed scope and the estate&apos;s
+              existing records. Available findings may show a potential
+              financial relationship, a response from an institution or an
+              enquiry that still needs information.
+            </p>
+            <ul className="mt-5 list-disc space-y-3 pl-5 text-sm leading-7 text-brand-slate marker:text-brand-gold">
+              <li>Check possible matches with the institution before treating them as confirmed estate assets or liabilities.</li>
+              <li>Obtain the ownership, balance or date-of-death valuation information needed for the administration.</li>
+              <li>Record unanswered enquiries and decide whether further enquiries or specialist advice are required.</li>
+            </ul>
+            <p className="mt-5 text-sm leading-8 text-brand-slate">
+              View our <Link href="/sample-reports" className={textLinkClassName}>illustrative asset discovery report</Link>{" "}
+              to see how findings may be presented. It is a demonstration;
+              actual reports depend on the instruction and information obtained.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section className="pb-20">
+        <div className="site-container">
+          <div className="section-label">Professional Questions</div>
+          <h2 className="mt-5 font-serif text-[clamp(2rem,4vw,2.8rem)] leading-[1.16] font-semibold text-brand-navy">
+            Frequently asked questions about probate asset searches
+          </h2>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {professionalFaqs.map((faq) => (
+              <article key={faq.question} className="min-w-0 border border-brand-border bg-white p-6 sm:p-8">
+                <h3 className="font-serif text-xl font-semibold text-brand-navy">{faq.question}</h3>
+                <p className="mt-4 text-sm leading-8 text-brand-slate">{faq.answer}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -282,35 +449,43 @@ export default function SolicitorsPage() {
         <div className="site-container grid gap-8 xl:grid-cols-[1.05fr_0.95fr]">
           <article
             id="professional-enquiry"
-            className="border border-brand-border bg-white p-8 md:p-10"
+            className="min-w-0 scroll-mt-28 border border-brand-border bg-white p-6 sm:p-8 md:p-10"
           >
             <div className="section-label">Start a Professional Enquiry</div>
             <h2 className="mt-5 font-serif text-[clamp(2rem,4vw,2.7rem)] leading-[1.16] font-semibold text-brand-navy">
-              Please complete the form below and we will respond within two
-              working days
+              Discuss an estate search instruction
             </h2>
-            <div className="mt-8">
+            <p className="mt-5 text-sm leading-8 text-brand-slate">
+              Tell us about your firm, your role and the search required. Use
+              the form to discuss scope, documentation and the appropriate
+              service before instructing a search. Keep this initial enquiry
+              to a brief overview; supporting documents can follow through the
+              case-start process.
+            </p>
+            <div className="mt-8 [&_button[type=submit]]:w-full [&_button[type=submit]]:px-4 sm:[&_button[type=submit]]:w-auto sm:[&_button[type=submit]]:px-8">
               <SolicitorEnquiryForm />
             </div>
           </article>
 
-          <article className="border border-brand-border bg-brand-ivory p-8">
+          <article className="min-w-0 border border-brand-border bg-brand-ivory p-6 sm:p-8">
             <h2 className="font-serif text-2xl font-semibold text-brand-navy">
-              Why solicitors use Estate Resolve
+              What to include in your professional enquiry
             </h2>
             <p className="mt-4 text-sm leading-7 text-brand-slate">
-              One instruction. Hundreds of institutions. Tens of thousands of
-              financial products.
+              Explain the gaps in the estate records, any known providers,
+              relevant jurisdictions and the type of search you are considering.
+              Indicate whether authority documents are available and identify
+              any deadlines relevant to your instruction.
             </p>
             <p className="mt-4 text-sm leading-7 text-brand-slate">
-              The UK financial marketplace contains tens of thousands of
-              banking, savings, pension, insurance and investment products.
-              Estate Resolve helps executors, solicitors and families make
-              extensive searches to identify assets that may otherwise be
-              overlooked.
+              If the estate involves specialist assets or several jurisdictions,
+              request a scoped quote. Confirm the proposed enquiries, fee and
+              current estimated timescale before proceeding.
             </p>
-            <p className="mt-4 text-xs uppercase tracking-[0.14em] text-brand-slate/72">
-              Source: Moneyfacts Group Plc
+            <p className="mt-4 text-sm leading-7 text-brand-slate">
+              Executors enquiring in a personal capacity can use our{" "}
+              <Link href="/contact" className={textLinkClassName}>general contact form</Link>{" "}
+              to discuss a deceased estate search.
             </p>
           </article>
         </div>
