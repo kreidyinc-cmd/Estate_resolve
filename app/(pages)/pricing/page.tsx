@@ -12,11 +12,11 @@ export const metadata = buildMetadata({
 
 const packageDescriptions = {
   standard_estate_search:
-    "For straightforward UK estates requiring a structured search for financial assets.",
+    "UK financial asset enquiries covering banks and building societies, pensions, insurers, investment providers, NS&I and unclaimed court funds.",
   asset_liability_search:
-    "Includes the standard asset search together with liability, insolvency and related checks.",
+    "Includes the Standard Estate Search, targeted share-registrar enquiries where there is a usable lead, review of available address history, relevant judgment, insolvency and company records, and credit-reference and OPG enquiries where appropriate, subject to authority documents and the organisation's requirements. Specialist share tracing and formal address tracing can be quoted separately where needed.",
   international_estate_search:
-    "Includes UK asset and liability searches together with searches in the listed overseas jurisdictions.",
+    "Includes the UK search and relevant Asset & Liability Search coverage, plus searches of relevant official unclaimed-asset registers in France, Australia, Canada and, where relevant, the United States and New Zealand. Direct overseas institution enquiries and specialist work are separately scoped.",
 } as const;
 
 const bespokePackage = {
@@ -91,6 +91,10 @@ export default function PricingPage() {
             </Link>
           </article>
         </div>
+
+        <p className="site-container mt-8 text-sm leading-7 text-brand-slate">
+          {config.timeline.initialReport}
+        </p>
 
         <div className="site-container mt-10 border border-brand-border bg-brand-ivory p-8">
           <h2 className="font-serif text-2xl font-semibold text-brand-navy">

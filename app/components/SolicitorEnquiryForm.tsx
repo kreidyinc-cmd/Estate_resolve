@@ -264,8 +264,8 @@ export function SolicitorEnquiryForm() {
 
       {isSubmitted ? (
         <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
-          Thank you. Your professional enquiry has been sent and we will respond
-          within two working days.
+          Thank you. Your professional enquiry has been sent. We aim to respond
+          to professional enquiries within two working days.
         </div>
       ) : null}
 

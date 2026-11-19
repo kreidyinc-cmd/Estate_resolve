@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SolicitorEnquiryForm } from "@/app/components/SolicitorEnquiryForm";
 import { PageHero } from "@/app/components/PageHero";
+import { config } from "@/app/lib/config";
 import { buildMetadata } from "@/app/lib/seo";
 
 export const metadata = buildMetadata({
@@ -24,7 +25,7 @@ const serviceOptions = [
     ctaHref: "/start-a-case?service=standard_estate_search",
     ctaLabel: "Start this search",
     description:
-      "For straightforward UK estates where the executor or solicitor requires a structured search across banks, building societies, insurers, pension providers, investment institutions, dormant assets and unclaimed court funds.",
+      "UK financial asset enquiries covering banks and building societies, pensions, insurers, investment providers, NS&I and unclaimed court funds.",
     price: "£175",
     title: "1. Standard Estate Search",
   },
@@ -32,16 +33,14 @@ const serviceOptions = [
     ctaHref: "/start-a-case?service=asset_liability_search",
     ctaLabel: "Start this search",
     description:
-      "Includes everything within the Standard Estate Search together with searches for potential liabilities and financial exposures.",
+      "Includes the Standard Estate Search and the following additional coverage:",
     details: [
-      "County Court Judgments (CCJs)",
-      "Insolvency records",
-      "Bankruptcy records",
-      "Office of the Public Guardian (OPG) checks",
-      "Credit bureau and credit reference data where available and appropriate",
-      "Other publicly accessible insolvency and liability registers",
-      "Company directorships",
+      "Targeted share-registrar enquiries where there is a usable lead",
+      "Review of available address history",
+      "Relevant judgment, insolvency and company records",
+      "Credit-reference and OPG enquiries where appropriate, subject to authority documents and the organisation's requirements",
     ],
+    note: "Specialist share tracing and formal address tracing can be quoted separately where needed.",
     price: "£210",
     title: "2. Asset & Liability Search",
   },
@@ -49,16 +48,15 @@ const serviceOptions = [
     ctaHref: "/start-a-case?service=international_estate_search",
     ctaLabel: "Start this search",
     description:
-      "Includes all elements of the Standard Estate Search and Asset & Liability Search, together with enquiries relating to overseas assets and financial interests.",
+      "Includes the UK search and relevant Asset & Liability Search coverage. Overseas work comprises searches of relevant official unclaimed-asset registers, including:",
     details: [
-      "United Kingdom",
-      "United States",
-      "Canada",
-      "Australia",
       "France",
-      "New Zealand",
+      "Australia",
+      "Canada",
+      "United States, where relevant",
+      "New Zealand, where relevant",
     ],
-    note: "Additional jurisdictions may be considered on request.",
+    note: "Direct overseas institution enquiries and specialist work are separately scoped. Specialist share tracing and formal address tracing can be quoted separately where needed.",
     price: "£350",
     title: "3. International Estate Search",
   },
@@ -87,23 +85,18 @@ const serviceOptions = [
 const comparisonRows = [
   ["Banks & Building Societies", "✓", "✓", "✓"],
   ["Pension Providers", "✓", "✓", "✓"],
-  ["Life Insurance Providers", "✓", "✓", "✓"],
-  ["Investment Institutions", "✓", "✓", "✓"],
-  ["Dormant Assets", "✓", "✓", "✓"],
+  ["Insurers", "✓", "✓", "✓"],
+  ["Investment Providers", "✓", "✓", "✓"],
+  ["NS&I", "✓", "✓", "✓"],
   ["Unclaimed Court Funds", "✓", "✓", "✓"],
-  ["Share Registrars", "", "✓", "✓"],
-  ["Company Directorships", "", "✓", "✓"],
-  ["County Court Judgments (CCJs)", "", "✓", "✓"],
-  ["Bankruptcy Records", "", "✓", "✓"],
-  ["Insolvency Records", "", "✓", "✓"],
-  ["Office of the Public Guardian (OPG) Checks", "", "✓", "✓"],
-  ["Publicly Available Liability Registers", "", "✓", "✓"],
-  ["Identity Trace & Address History Research", "", "✓", "✓"],
-  ["United States", "", "", "✓"],
-  ["Canada", "", "", "✓"],
-  ["Australia", "", "", "✓"],
-  ["France", "", "", "✓"],
-  ["New Zealand", "", "", "✓"],
+  ["Targeted share-registrar enquiries", "", "Where there is a usable lead", "Where there is a usable lead"],
+  ["Review of available address history", "", "✓", "✓"],
+  ["Relevant judgment, insolvency and company records", "", "✓", "✓"],
+  ["Credit-reference and OPG enquiries", "", "Where appropriate, subject to authority and organisation requirements", "Where appropriate, subject to authority and organisation requirements"],
+  ["Specialist share tracing and formal address tracing", "", "Quoted separately where needed", "Quoted separately where needed"],
+  ["Official unclaimed-asset registers: France, Australia, Canada", "", "", "✓"],
+  ["Official unclaimed-asset registers: United States, New Zealand", "", "", "Where relevant"],
+  ["Direct overseas institution enquiries and specialist work", "", "", "Separately scoped"],
 ] as const;
 
 export default function SolicitorsPage() {
@@ -137,9 +130,11 @@ export default function SolicitorsPage() {
               dealing with deceased estates.
             </p>
             <p className="mt-4 text-sm leading-8 text-brand-slate">
-              Our service helps identify possible UK and international financial
-              assets, including bank accounts, building society accounts,
-              pensions, insurance policies, investments and shareholdings. We
+              Our service helps identify possible UK financial assets, including
+              bank accounts, building society accounts, pensions, insurance
+              policies and investments. Relevant overseas official
+              unclaimed-asset register searches are available through the
+              International Estate Search. We
               provide a clear detailed report showing the institutions
               contacted, the responses received, and any further action
               required.
@@ -153,6 +148,9 @@ export default function SolicitorsPage() {
             <p className="mt-4 text-sm leading-8 text-brand-slate">
               Helps executors and solicitors identify estate assets and
               liabilities more efficiently and with less administration.
+            </p>
+            <p className="mt-4 text-sm leading-8 text-brand-slate">
+              {config.timeline.initialReport}
             </p>
           </article>
 
@@ -235,7 +233,7 @@ export default function SolicitorsPage() {
           <div className="section-label">Service Comparison</div>
           <article className="mt-5 border border-brand-border bg-white p-6 md:p-8">
             <div className="overflow-x-auto">
-              <table className="min-w-full border-collapse">
+              <table className="min-w-[900px] border-collapse">
                 <thead>
                   <tr className="border-b border-brand-border">
                     <th className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.12em] text-brand-slate">
@@ -286,9 +284,11 @@ export default function SolicitorsPage() {
           >
             <div className="section-label">Start a Professional Enquiry</div>
             <h2 className="mt-5 font-serif text-[clamp(2rem,4vw,2.7rem)] leading-[1.16] font-semibold text-brand-navy">
-              Please complete the form below and we will respond within two
-              working days
+              Start a professional enquiry
             </h2>
+            <p className="mt-4 text-sm leading-7 text-brand-slate">
+              We aim to respond to professional enquiries within two working days.
+            </p>
             <div className="mt-8">
               <SolicitorEnquiryForm />
             </div>
