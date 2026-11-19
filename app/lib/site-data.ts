@@ -152,12 +152,12 @@ export const faqItems = [
   {
     question: "What banks and financial institutions do you contact?",
     answer:
-      "We conduct enquiries with over 140 financial institutions, including banks, building societies, pension providers, insurers, investment managers, share registrars, and court registers covering more than 400 financial brands and trading names across the UK.",
+      "The Standard Estate Search covers UK financial asset enquiries with banks and building societies, pension providers, insurers, investment providers, NS&I and unclaimed court funds. Targeted share-registrar enquiries are included in the Asset & Liability Search where there is a usable lead.",
   },
   {
     question: "How long does a case usually take?",
     answer:
-      "We aim to complete most searches within 30 days. In some cases, timescales may be extended due to delays or additional requirements from financial institutions. Any significant findings received after the report has been issued will be communicated to you as part of our ongoing enquiries.",
+      "We aim to issue an initial report within 30 days of receiving the required documents, with any outstanding enquiries shown in the report.",
   },
   {
     question: "Do you guarantee that assets will be found?",

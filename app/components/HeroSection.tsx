@@ -4,8 +4,6 @@ import { config } from "@/app/lib/config";
 import { processSteps } from "@/app/lib/site-data";
 
 export function HeroSection() {
-  const turnaroundValue = config.timeline.standardTurnaround.split(" ")[0];
-
   return (
     <section className="hero-shell min-h-screen pt-[72px] text-white">
       <div className="site-container relative z-10 grid min-h-[calc(100vh-72px)] items-center gap-14 py-16 lg:grid-cols-[minmax(0,1fr)_28rem] lg:gap-20">
@@ -74,13 +72,13 @@ export function HeroSection() {
             </Link>
           </div>
 
-          <div className="mt-12 grid max-w-xl grid-cols-3 gap-6 border-t border-white/14 pt-8">
-            <div>
-              <p className="font-serif text-3xl font-semibold text-white">
-                {turnaroundValue}
+          <div className="mt-12 grid max-w-xl gap-6 border-t border-white/14 pt-8 sm:grid-cols-2">
+            <div className="sm:col-span-2">
+              <p className="font-serif text-2xl font-semibold text-white">
+                Initial report target
               </p>
-              <p className="mt-2 text-xs uppercase tracking-[0.16em] text-white/46">
-                Day Turnaround
+              <p className="mt-2 text-sm leading-6 text-white/70">
+                {config.timeline.initialReport}
               </p>
             </div>
             <div>
