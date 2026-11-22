@@ -34,14 +34,14 @@ You may not need one if you have a reliable inventory, recent records for the re
 
 ### Free enquiries to try first
 
-- **Known banks, building societies and other providers:** Contact their bereavement teams directly where records identify the institution. Ask what evidence of death and authority they require, and whether they can confirm holdings and date-of-death values. [GOV.UK's asset and debt guidance](https://www.gov.uk/valuing-estate-of-someone-who-died/identify-assets-debts) recommends identifying organisations from the person's papers and contacting them for values.
-- **[My Lost Account](https://www.mylostaccount.org.uk/start-search):** This free service traces lost UK personal bank, building society and NS&I accounts. It accepts searches concerning someone who has died, but it is not a search of every active account, pension, investment or overseas holding. If you know the provider, approach it directly first.
-- **[NS&I's tracing service](https://www.nsandi.com/help/lost-touch-with-nsandi/track-lost-investments):** This can check NS&I savings or investments, including where a deceased relative may have held them. It does not search other providers. NS&I says someone tracing on another person's behalf must be legally entitled to act, for example as an executor.
-- **[GOV.UK's Pension Tracing Service](https://www.gov.uk/find-pension-contact-details):** This finds contact details for a workplace or personal pension scheme when you know an employer or provider name. It does not confirm whether a pension exists or its value. Contact the scheme to ask about any entitlement and its requirements. [MoneyHelper's guidance on pensions after death](https://www.moneyhelper.org.uk/en/family-and-care/death-and-bereavement/what-to-do-about-someones-pension-when-theyve-died) explains that pension benefits need separate attention.
+- **Known banks, building societies and other providers:** Contact their bereavement teams directly where records identify the institution. Ask what evidence of death and authority they require, and whether they can confirm holdings and date-of-death values. GOV.UK's asset and debt guidance recommends identifying organisations from the person's papers and contacting them for values.
+- **My Lost Account:** This free service traces lost UK personal bank, building society and NS&I accounts. It accepts searches concerning someone who has died, but it is not a search of every active account, pension, investment or overseas holding. If you know the provider, approach it directly first.
+- **NS&I's tracing service:** This can check NS&I savings or investments, including where a deceased relative may have held them. It does not search other providers. NS&I says someone tracing on another person's behalf must be legally entitled to act, for example as an executor.
+- **GOV.UK's Pension Tracing Service:** This finds contact details for a workplace or personal pension scheme when you know an employer or provider name. It does not confirm whether a pension exists or its value. Contact the scheme to ask about any entitlement and its requirements. MoneyHelper's guidance on pensions after death explains that pension benefits need separate attention.
 
 ## What should an executor or administrator record?
 
-Personal representatives need to identify and deal with estate assets. [GOV.UK explains their responsibilities](https://www.gov.uk/probate-estate) and the need to identify assets and debts when valuing an estate. This does not amount to a blanket requirement to buy a commercial search. Keep a simple enquiry log: the clue, institution or service contacted, date, reference, documents supplied, response and next action. Keep copies of confirmations and distinguish an estimated value from a provider's confirmed date-of-death value.
+Personal representatives need to identify and deal with estate assets. GOV.UK explains their responsibilities and the need to identify assets and debts when valuing an estate. This does not amount to a blanket requirement to buy a commercial search. Keep a simple enquiry log: the clue, institution or service contacted, date, reference, documents supplied, response and next action. Keep copies of confirmations and distinguish an estimated value from a provider's confirmed date-of-death value.
 
 Tell each institution your role and ask which documents it needs before it will disclose information or release funds. Requirements differ; a search result itself does not give authority to access an account. If ownership, debts, tax treatment or a disputed entitlement is unclear, seek appropriate professional advice rather than treating a match as a settled estate asset.
 
@@ -85,7 +85,7 @@ No. My Lost Account is aimed at lost UK personal bank, building society and NS&I
 
 ### Can I search before a grant of probate is issued?
 
-You can begin gathering records and asking institutions what they require. A provider may ask for different evidence before disclosing details or releasing funds. [GOV.UK's steps before applying for probate](https://www.gov.uk/applying-for-probate/before-you-apply) include estimating the estate's value; ask each institution what it will accept in your circumstances.
+You can begin gathering records and asking institutions what they require. A provider may ask for different evidence before disclosing details or releasing funds. GOV.UK's steps before applying for probate include estimating the estate's value; ask each institution what it will accept in your circumstances.
 
 ### Does a result mean the estate can claim the money?
 

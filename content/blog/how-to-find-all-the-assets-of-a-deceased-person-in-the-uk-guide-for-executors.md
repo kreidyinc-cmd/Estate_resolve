@@ -13,7 +13,7 @@ seo:
 ---
 To find a deceased person's financial assets, start with their records, contact known providers, follow unexplained payments and use appropriate tracing services for missing accounts. Keep a written record of enquiries and request values at the date of death. No search can guarantee that every asset will be found.
 
-For an executor or administrator, the work involves more than locating accounts. You also need to establish ownership, identify debts and check which funds belong to the estate. [GOV.UK explains the personal representative's responsibilities](https://www.gov.uk/probate-estate).
+For an executor or administrator, the work involves more than locating accounts. You also need to establish ownership, identify debts and check which funds belong to the estate. GOV.UK explains the personal representative's responsibilities.
 
 A practical order is to:
 
@@ -27,7 +27,7 @@ A practical order is to:
 
 Assets are things the deceased owned or money owed to them. These can include cash, accounts, investments, property, personal possessions and interests in a business. Unpaid wages or a refund may also be relevant. Money the deceased owed to someone else is a liability, so record it separately.
 
-Do not assume everything connected with the deceased is available for the executor to distribute. Joint ownership, trusts, pensions and insurance arrangements can affect who receives money. An item passing outside the estate administration may still need consideration for Inheritance Tax reporting. [GOV.UK's estate valuation guidance](https://www.gov.uk/valuing-estate-of-someone-who-died/estimate-estate-value) explains what to investigate.
+Do not assume everything connected with the deceased is available for the executor to distribute. Joint ownership, trusts, pensions and insurance arrangements can affect who receives money. An item passing outside the estate administration may still need consideration for Inheritance Tax reporting. GOV.UK's estate valuation guidance explains what to investigate.
 
 Keep uncertain items on your working list, marked for clarification. For example, record a pension provider as a lead until it confirms what benefits exist and who can claim them.
 
@@ -35,7 +35,7 @@ Keep uncertain items on your working list, marked for clarification. For example
 
 Enquiries about the estate are normally handled by its executor or administrator, or a professional acting with appropriate authority. Being a relative or beneficiary does not by itself establish that authority. Explain your role to each provider and ask what it needs before it can disclose information.
 
-In England and Wales, an executor named in a will may apply for a grant of probate. Where there is no will, an eligible administrator generally applies for letters of administration. Scotland uses **confirmation**, and Northern Ireland has a separate probate process. [GOV.UK's probate overview](https://www.gov.uk/applying-for-probate) explains these distinctions and links to the relevant guidance.
+In England and Wales, an executor named in a will may apply for a grant of probate. Where there is no will, an eligible administrator generally applies for letters of administration. Scotland uses **confirmation**, and Northern Ireland has a separate probate process. GOV.UK's probate overview explains these distinctions and links to the relevant guidance.
 
 Prepare a document pack containing, where available:
 
@@ -47,13 +47,13 @@ Prepare a document pack containing, where available:
 - Your identification, contact details and evidence of authority requested by the provider.
 - The grant, letters of administration or confirmation, if required.
 
-Ask which documents are needed to disclose information and which are needed to release money. Requirements vary by institution, and a grant is not required for every account or estate. You need to investigate and value the estate before applying for probate; you do not have to wait for a grant to start gathering records. [GOV.UK explains the steps before applying](https://www.gov.uk/applying-for-probate/before-you-apply).
+Ask which documents are needed to disclose information and which are needed to release money. Requirements vary by institution, and a grant is not required for every account or estate. You need to investigate and value the estate before applying for probate; you do not have to wait for a grant to start gathering records. GOV.UK explains the steps before applying.
 
 ## Where should executors begin searching?
 
 ### Gather records and follow the money
 
-Review the will, financial folders, tax returns, payslips, bank statements and correspondence. Ask family members and any known solicitor, accountant or financial adviser about institutions the deceased used. [MoneyHelper's bereavement checklist](https://www.moneyhelper.org.uk/en/family-and-care/death-and-bereavement/what-to-do-when-someone-dies) provides a useful starting point for notifications and paperwork.
+Review the will, financial folders, tax returns, payslips, bank statements and correspondence. Ask family members and any known solicitor, accountant or financial adviser about institutions the deceased used. MoneyHelper's bereavement checklist provides a useful starting point for notifications and paperwork.
 
 On statements, look for transfers to savings accounts, investment payments, pension credits, dividends and insurance premiums. A payment description is a lead to investigate, not proof of an asset. An old policy may have ended or an account may have been transferred.
 
@@ -84,7 +84,7 @@ Start with institutions named on statements, cards, passbooks or regular transfe
 - Do you hold share certificates or deeds for the deceased?
 - What documents do you need for the valuation and, separately, to release funds?
 
-For forgotten accounts, free lost-account tracing may help. [MoneyHelper explains how to find old bank accounts](https://www.moneyhelper.org.uk/en/blog/everyday-money/how-to-find-old-bank-account), including My Lost Account for lost or dormant bank and building society accounts and NS&I savings. Follow the process for a deceased person's accounts and provide the authority requested. This is not a search of every active account or financial product. Continue contacting likely providers directly where the records suggest an account existed.
+For forgotten accounts, free lost-account tracing may help. MoneyHelper explains how to find old bank accounts, including My Lost Account for lost or dormant bank and building society accounts and NS&I savings. Follow the process for a deceased person's accounts and provide the authority requested. This is not a search of every active account or financial product. Continue contacting likely providers directly where the records suggest an account existed.
 
 Record joint accounts separately and establish the deceased's interest rather than treating the whole balance as estate money. For access, notification and Scottish ownership considerations, see [what happens to a bank account when someone dies](/blog/bank-account-when-someone-dies).
 
@@ -92,15 +92,15 @@ Record joint accounts separately and establish the deceased's interest rather th
 
 Look for National Savings and Investments (NS&I) correspondence, savings certificates, Premium Bond records and payments to or from NS&I. Contact its bereavement team about known holdings and ask for date-of-death balances, details of any unpaid prizes and the documents needed to claim.
 
-Missing certificates do not mean there is nothing to investigate. [GOV.UK's guidance on identifying assets and debts](https://www.gov.uk/valuing-estate-of-someone-who-died/identify-assets-debts) points to NS&I's free tracing service. Supply the identifying details you have, including earlier names and addresses, and follow NS&I's document requirements.
+Missing certificates do not mean there is nothing to investigate. GOV.UK's guidance on identifying assets and debts points to NS&I's free tracing service. Supply the identifying details you have, including earlier names and addresses, and follow NS&I's document requirements.
 
 ### Workplace and personal pensions
 
 Build an employment history from payslips, pension statements and other records. Contact former employers or scheme administrators, and investigate regular payments from pension providers or insurers. Notify known providers promptly and ask whether any payments received after death must be returned.
 
-The free [government Pension Tracing Service](https://www.gov.uk/find-pension-contact-details) can help locate scheme contact details using an employer or provider name. It does **not** confirm that a pension exists, establish its value or decide who is entitled to benefits. You must then contact the scheme.
+The free government Pension Tracing Service can help locate scheme contact details using an employer or provider name. It does **not** confirm that a pension exists, establish its value or decide who is entitled to benefits. You must then contact the scheme.
 
-Ask about any unpaid pension, dependant's pension, lump sum or other death benefit. Not every pension has a transferable pot, and not every death benefit belongs to the estate for distribution. Ask the provider who may receive it and whether it needs to be included in tax reporting under the rules relevant to the date of death. [MoneyHelper explains pensions after someone dies](https://www.moneyhelper.org.uk/en/family-and-care/death-and-bereavement/what-to-do-about-someones-pension-when-theyve-died).
+Ask about any unpaid pension, dependant's pension, lump sum or other death benefit. Not every pension has a transferable pot, and not every death benefit belongs to the estate for distribution. Ask the provider who may receive it and whether it needs to be included in tax reporting under the rules relevant to the date of death. MoneyHelper explains pensions after someone dies.
 
 ### Shares, investments and ISAs
 
@@ -108,19 +108,19 @@ Look for share certificates, dividend correspondence, investment statements, ISA
 
 Request confirmation of the holdings and their date-of-death values, including any cash held alongside investments. Check whether two documents describe the same holding before adding both to the inventory. Keep old company names or reference numbers as leads if the current provider is unclear.
 
-Do not leave an ISA out because it was described as tax-free. [GOV.UK confirms that ISA investments form part of the estate for Inheritance Tax purposes](https://www.gov.uk/individual-savings-accounts/if-you-die). Ask the provider about the account's treatment after death rather than assuming the account has already closed.
+Do not leave an ISA out because it was described as tax-free. GOV.UK confirms that ISA investments form part of the estate for Inheritance Tax purposes. Ask the provider about the account's treatment after death rather than assuming the account has already closed.
 
 ### Life insurance and death benefits
 
 Review policy documents, premium payments and employment benefit information. Ask insurers and employers about life cover, death-in-service benefits and any mortgage protection policy, including what evidence is required and who may claim. A payment to an insurer could relate to a different type of insurance, so confirm the policy rather than assuming it provides a death benefit.
 
-Do not automatically add every expected payout to the estate's distributable funds. A policy may be held in trust or payable under an arrangement benefiting someone else. [HMRC explains how life policy trusts can affect estate treatment](https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm20555). Ask for written clarification of the recipient and obtain advice if the ownership or tax position is unclear.
+Do not automatically add every expected payout to the estate's distributable funds. A policy may be held in trust or payable under an arrangement benefiting someone else. HMRC explains how life policy trusts can affect estate treatment. Ask for written clarification of the recipient and obtain advice if the ownership or tax position is unclear.
 
 ## Property, business interests and other assets
 
-Check deeds, mortgage correspondence, rental records and business papers. [HM Land Registry's property information service](https://www.gov.uk/search-property-information-land-registry) covers England and Wales; Scotland and Northern Ireland use different registers. A search for a known property is not a complete nationwide search of everything a person may own.
+Check deeds, mortgage correspondence, rental records and business papers. HM Land Registry's property information service covers England and Wales; Scotland and Northern Ireland use different registers. A search for a known property is not a complete nationwide search of everything a person may own.
 
-For business interests, gather company accounts, share records, partnership agreements and details of any money the business owed the deceased. [Companies House information](https://www.gov.uk/get-information-about-a-company) can help identify company connections. Ask the company's advisers to confirm share ownership and any other interest, and obtain an appropriate valuation; a director listing alone does not establish a shareholding.
+For business interests, gather company accounts, share records, partnership agreements and details of any money the business owed the deceased. Companies House information can help identify company connections. Ask the company's advisers to confirm share ownership and any other interest, and obtain an appropriate valuation; a director listing alone does not establish a shareholding.
 
 Include relevant vehicles, valuables and other possessions in the wider inventory. If records suggest cryptocurrency or another digital asset, preserve the records securely and obtain specialist help where necessary. Do not publish passwords, wallet keys or recovery phrases in correspondence or a shared search log.
 
@@ -128,15 +128,15 @@ Include relevant vehicles, valuables and other possessions in the wider inventor
 
 Use a separate list for mortgages, loans, overdrafts, credit cards, unpaid bills and possible tax liabilities. Contact known creditors for amounts outstanding at death and details of any continuing obligations. Identify joint debts separately and ask who remains liable. Record funeral and administration expenses separately from the original debts so that the figures remain clear.
 
-An asset search result does not establish that all debts have been identified. Check for unexplained repayments and ask the deceased's accountant or other advisers about outstanding matters. [GOV.UK explains settling debts and taxes](https://www.gov.uk/probate-estate/settling-debts-and-taxes).
+An asset search result does not establish that all debts have been identified. Check for unexplained repayments and ask the deceased's accountant or other advisers about outstanding matters. GOV.UK explains settling debts and taxes.
 
-If the estate may not have enough money to meet its liabilities, obtain advice before paying particular creditors or distributing assets. [MoneyHelper explains handling debts after a death](https://www.moneyhelper.org.uk/en/family-and-care/death-and-bereavement/dealing-with-the-debts-of-someone-who-has-died). Do not assume that discovering an account means its balance can immediately be paid to beneficiaries.
+If the estate may not have enough money to meet its liabilities, obtain advice before paying particular creditors or distributing assets. MoneyHelper explains handling debts after a death. Do not assume that discovering an account means its balance can immediately be paid to beneficiaries.
 
 ## Obtain and record date-of-death values
 
 For each confirmed asset or debt, request a figure **as at the date of death**, rather than using today's balance. Retain the provider's letter or valuation, its date and the account or holding reference. Record the currency and ownership share, and ask whether interest or other amounts due at death are included.
 
-For property, business interests or unusual investments, ask whether a professional valuation is needed. Label estimates clearly until they are replaced with an appropriate figure. [GOV.UK's valuation guidance](https://www.gov.uk/valuing-estate-of-someone-who-died/estimate-estate-value) covers both identifying assets and establishing their value.
+For property, business interests or unusual investments, ask whether a professional valuation is needed. Label estimates clearly until they are replaced with an appropriate figure. GOV.UK's valuation guidance covers both identifying assets and establishing their value.
 
 Keep later interest, dividends, sales proceeds and payments separate from the date-of-death record. Do not assume the totals used for probate and Inheritance Tax are identical: assets passing to a survivor, trusts, gifts and overseas assets can affect the reporting. Seek help where the treatment is uncertain.
 
@@ -154,7 +154,7 @@ If an asset emerges later, verify ownership and value, update the estate records
 
 Look for foreign statements, overseas tax papers, property documents and payments connected with time spent abroad. Record the country, currency and relevant provider for each lead.
 
-An overseas institution may require local legal documents or a separate process. A UK enquiry or grant should not be assumed to resolve every foreign ownership or release requirement. For an excepted estate in England and Wales, [GOV.UK's guidance on probate valuation](https://www.gov.uk/applying-for-probate/before-you-apply) explains that overseas assets are subtracted from the gross estate value for Inheritance Tax when calculating the gross value for probate.
+An overseas institution may require local legal documents or a separate process. A UK enquiry or grant should not be assumed to resolve every foreign ownership or release requirement. For an excepted estate in England and Wales, GOV.UK's guidance on probate valuation explains that overseas assets are subtracted from the gross estate value for Inheritance Tax when calculating the gross value for probate.
 
 Seek appropriate legal or tax advice where there are trusts, disputed ownership, business interests or uncertainty about which jurisdiction applies. Establishing that an asset exists does not settle how it must be administered.
 
@@ -178,7 +178,7 @@ You can begin with the deceased's identifying details, previous addresses and an
 
 ### Does Tell Us Once find all the financial assets?
 
-No. [Tell Us Once notifies government organisations](https://www.gov.uk/after-a-death/organisations-you-need-to-contact-and-tell-us-once); it does not search all private financial accounts. Banks, insurers and private pension providers still need separate contact. It is available where the deceased lived in England, Scotland or Wales, including if they died while temporarily abroad. Northern Ireland has a different notification process.
+No. Tell Us Once notifies government organisations; it does not search all private financial accounts. Banks, insurers and private pension providers still need separate contact. It is available where the deceased lived in England, Scotland or Wales, including if they died while temporarily abroad. Northern Ireland has a different notification process.
 
 ### Does every pension or life insurance payout belong to the estate?
 
