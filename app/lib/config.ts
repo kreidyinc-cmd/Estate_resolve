@@ -1,7 +1,7 @@
 const baseServicePackages = [
   {
     description:
-      "Structured search across UK banks, building societies, insurers, pension providers, investment institutions, dormant assets and unclaimed court funds.",
+      "UK financial asset enquiries covering banks and building societies, pensions, insurers, investment providers, NS&I and unclaimed court funds.",
     label: "Standard Estate Search",
     price: "£175",
     hideFeeInOptionList: false,
@@ -11,7 +11,7 @@ const baseServicePackages = [
   },
   {
     description:
-      "Includes the standard estate search together with liability and due-diligence searches.",
+      "Includes the Standard Estate Search, targeted share-registrar enquiries where there is a usable lead, review of available address history, relevant judgment, insolvency and company records, and credit-reference and OPG enquiries where appropriate, subject to authority documents and the organisation's requirements. Specialist share tracing and formal address tracing can be quoted separately where needed.",
     label: "Asset & Liability Search",
     price: "£210",
     hideFeeInOptionList: false,
@@ -21,7 +21,7 @@ const baseServicePackages = [
   },
   {
     description:
-      "Includes the asset and liability search together with international enquiries for overseas assets and interests.",
+      "Includes the UK search and relevant Asset & Liability Search coverage, plus searches of relevant official unclaimed-asset registers in France, Australia, Canada and, where relevant, the United States and New Zealand. Direct overseas institution enquiries and specialist work are separately scoped.",
     label: "International Estate Search",
     price: "£350",
     hideFeeInOptionList: false,
@@ -137,6 +137,7 @@ export const config = {
     testPaymentOptionEnabled: Boolean(testPaymentOption),
   },
   timeline: {
-    standardTurnaround: "30 working days",
+    initialReport:
+      "We aim to issue an initial report within 30 days of receiving the required documents, with any outstanding enquiries shown in the report.",
   },
 } as const;

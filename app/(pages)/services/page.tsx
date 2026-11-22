@@ -55,14 +55,14 @@ const assetTypes = [
   {
     title: "NS&I savings and investments",
     paragraphs: [
-      "NS&I products may also require investigation. Whether they are included depends on the agreed scope and the information available.",
+      "NS&I is included in the Standard Estate Search's UK financial asset enquiries.",
     ],
   },
   {
     title: "Liabilities and overseas searches",
     paragraphs: [
       "Estate Resolve offers separate Asset & Liability Search and International Estate Search options.",
-      "Liability checks and overseas enquiries should not be assumed to be included in the standard search package.",
+      "The Asset & Liability Search adds relevant records and conditional enquiries. The International Estate Search adds relevant official overseas unclaimed-asset register searches; direct overseas institution enquiries are separately scoped.",
     ],
   },
 ];
@@ -125,17 +125,17 @@ const searchOptions = [
   {
     title: "Standard Estate Search",
     description:
-      "A structured search intended to help identify potentially overlooked financial assets associated with a deceased estate.",
+      "UK financial asset enquiries covering banks and building societies, pensions, insurers, investment providers, NS&I and unclaimed court funds.",
   },
   {
     title: "Asset & Liability Search",
     description:
-      "A broader option that includes additional liability-related enquiries according to the selected package.",
+      "Includes the Standard Estate Search, targeted share-registrar enquiries where there is a usable lead, review of available address history, relevant judgment, insolvency and company records, and credit-reference and OPG enquiries where appropriate, subject to authority documents and the organisation's requirements. Specialist share tracing and formal address tracing can be quoted separately where needed.",
   },
   {
     title: "International Estate Search",
     description:
-      "An option intended for estates requiring relevant overseas financial enquiries within the agreed service scope.",
+      "Includes the UK search and relevant Asset & Liability Search coverage, plus searches of relevant official unclaimed-asset registers in France, Australia, Canada and, where relevant, the United States and New Zealand. Direct overseas institution enquiries and specialist work are separately scoped.",
   },
 ];
 
@@ -160,7 +160,7 @@ const serviceFaqs = [
   {
     question: "Does the search include debts and overseas assets?",
     answer:
-      "Estate Resolve offers separate asset-and-liability and international search options. The exact inclusions and fees depend on the selected package.",
+      "The Asset & Liability Search includes relevant judgment, insolvency and company records, with credit-reference and OPG enquiries where appropriate, subject to authority documents and the organisation's requirements. The International Estate Search adds relevant official unclaimed-asset register searches in France, Australia, Canada and, where relevant, the United States and New Zealand. Direct overseas institution enquiries and specialist work are separately scoped.",
   },
   {
     question:
@@ -171,7 +171,7 @@ const serviceFaqs = [
   {
     question: "How long does an estate asset search take?",
     answer:
-      "Timescales can vary according to the search scope, available information and institution responses. Ask Estate Resolve for the current estimated timescale for your selected service.",
+      "We aim to issue an initial report within 30 days of receiving the required documents, with any outstanding enquiries shown in the report.",
   },
   {
     question: "Can a solicitor instruct a search?",
